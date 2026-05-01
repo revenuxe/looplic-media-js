@@ -110,10 +110,10 @@ const ContactForm = () => {
           className="text-center mb-10 md:mb-14"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-snug mb-4 text-primary-foreground">
-            <span className="italic">Find</span> Your Ideal Workspace
+            <span className="italic">Start</span> Your Content Project
           </h2>
           <p className="text-primary-foreground/70 text-base sm:text-lg max-w-md mx-auto">
-            Tell us your requirements — we'll curate the best office options for your team.
+            Tell us about your brand and what you want to create — we'll come back with a plan within 24 hours.
           </p>
         </motion.div>
 
@@ -192,15 +192,15 @@ const ContactForm = () => {
               </div>
             </div>
 
-            {/* Preferred Location */}
+            {/* Project Type / Preferred Service */}
             <div>
-              <label className={labelClass}>Preferred Location</label>
+              <label className={labelClass}>Project Type</label>
               <div className="relative">
                 <input
                   type="text"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  placeholder="HSR Layout, Koramangala, Whitefield…"
+                  placeholder="AI video, product shoot, ad film, UGC…"
                   required
                   className={`${inputClass} pr-10`}
                 />
@@ -216,14 +216,14 @@ const ContactForm = () => {
               </div>
             </div>
 
-            {/* Nature of Business */}
+            {/* Brand / Industry */}
             <div>
-              <label className={labelClass}>Nature of Business</label>
+              <label className={labelClass}>Brand &amp; Industry</label>
               <input
                 type="text"
                 value={business}
                 onChange={(e) => setBusiness(e.target.value)}
-                placeholder="IT Consulting, Marketing Agency…"
+                placeholder="D2C beauty brand, SaaS, real estate…"
                 className={inputClass}
               />
             </div>
@@ -265,10 +265,10 @@ const ContactForm = () => {
                 {submitting ? (
                   <span className="inline-flex items-center gap-2">
                     <Loader2 className="w-5 h-5 animate-spin" />
-                    Finding your space…
+                    Sending…
                   </span>
                 ) : (
-                  "Start My Office Search"
+                  "Start My Project"
                 )}
               </button>
             </div>
