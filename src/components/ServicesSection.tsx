@@ -234,6 +234,19 @@ const ServicesSection = () => {
             ))}
           </div>
         )}
+
+        {/* Show All Services CTA */}
+        <div className="mt-10 md:mt-14 flex justify-center">
+          <Link
+            to="/services"
+            className="group inline-flex items-center gap-3 bg-accent text-accent-foreground font-semibold text-sm sm:text-base py-3 sm:py-4 pl-6 sm:pl-8 pr-3 sm:pr-4 rounded-full hover:opacity-90 transition-opacity shadow-lg"
+          >
+            <span>Show All Services</span>
+            <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 border-accent-foreground/30 flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
+              <ArrowUpRight size={16} />
+            </span>
+          </Link>
+        </div>
       </div>
     </section>
   );
