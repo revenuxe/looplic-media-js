@@ -1,19 +1,19 @@
-import { Target, TrendingUp, Shield } from "lucide-react";
+import { Sparkles, Zap, Film } from "lucide-react";
 
 const goals = [
   {
-    icon: Target,
-    title: "Stop Wasting Weeks — Find the Perfect Office Space for Rent Near You in Minutes",
-    color: "text-lime",
-  },
-  {
-    icon: TrendingUp,
-    title: "Boost Productivity with Premium Coworking Desks & Managed Workspaces",
+    icon: Sparkles,
+    title: "Generate AI Videos & Visuals That Look Truly On-Brand",
     color: "text-accent",
   },
   {
-    icon: Shield,
-    title: "Future-Proof Your Commercial Office Strategy with Flexible Lease Terms",
+    icon: Zap,
+    title: "Ship Ad Films, UGC & Product Shoots in Days, Not Months",
+    color: "text-accent",
+  },
+  {
+    icon: Film,
+    title: "Scale Content Across Platforms Without Scaling Your Budget",
     color: "text-primary-foreground",
   },
 ];
@@ -23,9 +23,9 @@ const GoalsSection = () => {
     <section id="goals" className="py-12 md:py-20 px-4 sm:px-6 lg:px-12 bg-dark-green">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-primary-foreground mb-8 md:mb-12">
-          <span className="italic">Why</span> Startups &amp; Enterprises Trust Us
+          <span className="italic">Why</span> Brands &amp; Agencies Choose Looplic
           <br />
-          for Workspace Solutions
+          for AI-Powered Content
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
