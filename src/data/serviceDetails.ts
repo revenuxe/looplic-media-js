@@ -137,6 +137,150 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     ],
     useCases: ["Fashion campaigns", "Real estate marketing", "Restaurant & cafe branding", "Hospitality & lifestyle"],
   },
+  "performance-creative": {
+    slug: "performance-creative",
+    title: "Performance Creative & Ad Iteration",
+    shortDesc:
+      "High-converting performance ads built, tested and iterated weekly to scale ROAS on Meta, Google & TikTok.",
+    longDesc:
+      "We run a weekly performance-creative engine — concepts, hooks, statics, UGC, AI cuts and motion — designed to crush CPA and lift ROAS. Each week your account gets fresh, on-trend ad variants tested against winners, with creative reporting tied to actual ad performance. Built for D2C brands, mobile apps and SaaS scaling spend on Meta, Google, TikTok and YouTube.",
+    variant: "default",
+    keywords:
+      "performance creative agency, Meta ads creative, Facebook ad agency, TikTok ads creative, performance marketing video, ROAS optimization, scroll stopping ads, conversion-focused ad creative",
+    steps: [
+      { number: "01", title: "Audit & Hook Bank", description: "We audit current ads, build a library of 30+ tested hooks and angles per brand." },
+      { number: "02", title: "Weekly Concepts", description: "Fresh ad concepts every week — UGC, AI video, static, motion — mapped to funnel stage." },
+      { number: "03", title: "Test & Learn", description: "We work with your media buyer to launch, track winners and kill losers fast." },
+      { number: "04", title: "Scale Winners", description: "Top-performing ads get cut down, remixed and scaled into more variants." },
+    ],
+    deliverables: ["20–40 new ad variants / month", "Hook & angle bank", "Weekly creative reporting", "Winning ad cut-downs"],
+    faqs: [
+      { q: "Do you also run the ads?", a: "We focus on creative — but partner closely with your in-house or agency media buyer." },
+      { q: "Which platforms?", a: "Meta, TikTok, YouTube, Google Demand Gen, Snap and Pinterest." },
+      { q: "Min commitment?", a: "Monthly retainer, 3-month minimum recommended for testing depth." },
+    ],
+    useCases: ["D2C brand scaling", "App install campaigns", "SaaS lead gen", "BFSI & fintech ads"],
+  },
+  "motion-graphics": {
+    slug: "motion-graphics",
+    title: "Motion Graphics & 2D/3D Animation",
+    shortDesc:
+      "Explainer videos, motion graphics and 2D/3D animation that make complex ideas instantly clickable.",
+    longDesc:
+      "From a 30-second SaaS explainer to a 3D product reveal or a fully animated brand film, our motion graphics studio brings ideas to life. We handle scripting, storyboarding, character design, illustration, 3D modelling, animation, sound design and final delivery — perfect for product launches, app demos, fintech onboarding and brand storytelling.",
+    variant: "lime",
+    keywords:
+      "motion graphics studio, 2D animation agency, 3D animation India, explainer video production, SaaS explainer video, animated brand film, after effects studio Bangalore",
+    steps: [
+      { number: "01", title: "Script & Storyboard", description: "Tight script + frame-by-frame storyboard signed off before any animation begins." },
+      { number: "02", title: "Style Frames", description: "Illustration and look-dev frames so you see the visual world before production." },
+      { number: "03", title: "Animation & VO", description: "Full animation, voice-over recording, music and sound design." },
+      { number: "04", title: "Final Delivery", description: "Master video + cut-downs, social ratios, GIFs and source files." },
+    ],
+    deliverables: ["30s–90s explainer video", "Vertical & square cut-downs", "Animated GIFs / loops", "Source files (AE / Blender)"],
+    faqs: [
+      { q: "Do you do 3D?", a: "Yes — Blender, Cinema 4D and Houdini for product, abstract and character work." },
+      { q: "Turnaround?", a: "Typical 60s explainer in 3–5 weeks." },
+      { q: "Voice-over included?", a: "Yes — male/female, English & Indian languages." },
+    ],
+    useCases: ["SaaS explainers", "App demos", "Fintech onboarding", "Product launch reveals", "Brand films"],
+  },
+  "podcast-video": {
+    slug: "podcast-video",
+    title: "Podcast & Long-Form Video Production",
+    shortDesc:
+      "Multi-camera podcast production + cinematic long-form video with built-in clip strategy for social.",
+    longDesc:
+      "We produce podcasts and long-form videos that double as content engines — multi-camera shoot, broadcast-grade audio, cinematic lighting, plus a clipping team that turns each episode into 10–20 short-form clips for Reels, Shorts and TikTok. Perfect for founder-led brands, B2B thought leadership, agencies and creators.",
+    variant: "default",
+    keywords:
+      "podcast production company, podcast studio Bangalore, video podcast production, long form content agency, founder podcast, B2B podcast, podcast clip editing service",
+    steps: [
+      { number: "01", title: "Format & Setup", description: "We design the format, set, branding and content calendar." },
+      { number: "02", title: "Multi-Cam Shoot", description: "3–4 camera shoot, lavalier + shotgun mics, broadcast lighting." },
+      { number: "03", title: "Edit & Master", description: "Full episode edit, color, audio mix, intro/outro and chapters." },
+      { number: "04", title: "Clip Engine", description: "10–20 short clips per episode, captioned and optimized for each platform." },
+    ],
+    deliverables: ["Long-form episode (30–90 min)", "10–20 short clips / episode", "Audio podcast master", "Branded thumbnails"],
+    faqs: [
+      { q: "Do you have a studio?", a: "Yes — turnkey podcast studio in Bangalore, plus on-location setups." },
+      { q: "Can you ghost-host?", a: "We can produce, direct and even script — you focus on showing up." },
+      { q: "Distribution?", a: "We deliver — your team or ours can publish across YouTube, Spotify, Apple, Reels & Shorts." },
+    ],
+    useCases: ["Founder podcasts", "B2B thought leadership", "Creator interview shows", "Conference recap content"],
+  },
+  "ai-avatars": {
+    slug: "ai-avatars",
+    title: "AI Avatars & Synthetic Presenters",
+    shortDesc:
+      "Photoreal AI avatars and digital presenters for ads, training, sales and personalised video at scale.",
+    longDesc:
+      "Scale faceless or branded video without booking a studio. We build photoreal AI avatars and synthetic presenters using HeyGen, Synthesia, D-ID, ElevenLabs and custom-trained models — for sales videos, training content, multilingual campaigns, explainer videos and personalised video at scale. Lip-sync in 30+ languages and clones of your founder, host or actor on demand.",
+    variant: "default",
+    keywords:
+      "AI avatar agency, synthetic media production, HeyGen agency, Synthesia agency, AI presenter videos, digital twin avatar, multilingual video production AI, ElevenLabs voice cloning",
+    steps: [
+      { number: "01", title: "Avatar Selection / Build", description: "Choose a stock AI presenter or we build a custom digital twin from your footage." },
+      { number: "02", title: "Script & Voice", description: "AI-assisted scripts + voice cloning in your preferred language and tone." },
+      { number: "03", title: "Generate & Direct", description: "Multi-take generation, lip-sync QA and creative direction." },
+      { number: "04", title: "Edit & Localize", description: "Edit, B-roll, captions and multilingual versions ready to ship." },
+    ],
+    deliverables: ["Custom AI avatar / clone", "Multilingual video versions", "Captioned social cuts", "Reusable avatar library"],
+    faqs: [
+      { q: "Can you clone my founder?", a: "Yes — with consent, we build a high-fidelity digital twin." },
+      { q: "How many languages?", a: "30+ including English, Hindi, Spanish, Arabic, French, German, Portuguese." },
+      { q: "Is it ethical / disclosed?", a: "Yes — we follow consent + disclosure best practices for synthetic media." },
+    ],
+    useCases: ["Sales outreach video", "Training & L&D", "Multilingual ads", "Personalised onboarding", "Faceless YouTube channels"],
+  },
+  "ecommerce-video": {
+    slug: "ecommerce-video",
+    title: "E-commerce Product Video Ads",
+    shortDesc:
+      "High-converting product videos for Shopify, Amazon, Meta & TikTok — built to lift CTR and AOV.",
+    longDesc:
+      "We produce performance-grade product videos engineered for the platforms that sell — Shopify PDPs, Amazon Sponsored Brands, Meta Reels, TikTok Shop and Flipkart. From cinematic studio shoots to splash, slow-mo, stop-motion and AI-generated product visuals, we build creative that lifts CTR, conversion rate and AOV.</br>",
+    variant: "orange",
+    keywords:
+      "ecommerce video production, Shopify product video, Amazon product video, TikTok shop video, Meta ad video, D2C video ads, product demo video agency, splash photography India",
+    steps: [
+      { number: "01", title: "Sales Funnel Audit", description: "We map your funnel — top, middle, bottom — and design videos for each stage." },
+      { number: "02", title: "Concept & Shotlist", description: "Hooks, demos, before/after, splash, stop-motion — concepted per SKU." },
+      { number: "03", title: "Studio Shoot", description: "Cinema-grade rig, splash team, stylist, AI augmentation where it adds magic." },
+      { number: "04", title: "Edit & Variants", description: "PDP video, hero ad, 6s/15s cut-downs, vertical & square — captioned." },
+    ],
+    deliverables: ["Hero PDP video", "6s / 15s / 30s ad cut-downs", "All aspect ratios + captions", "Static frames & GIFs"],
+    faqs: [
+      { q: "Do you handle returns / shipping?", a: "Yes — pickup and return logistics for products across India." },
+      { q: "Will it lift conversions?", a: "Brands typically see 15–40% CTR uplift on tested winning creatives." },
+      { q: "Bulk SKU pricing?", a: "Yes — discounted rates for catalogs above 25 SKUs." },
+    ],
+    useCases: ["Shopify PDPs", "Amazon Sponsored Brand video", "Meta & TikTok product ads", "Quick commerce (Blinkit/Zepto)"],
+  },
+  "social-content": {
+    slug: "social-content",
+    title: "Social Media Content & Reels Production",
+    shortDesc:
+      "Monthly Reels, Shorts and TikTok content engines that keep your brand top-of-feed.",
+    longDesc:
+      "We run end-to-end social content production — monthly shoot days, content calendars, trend monitoring, scripting, shooting and editing — so your Instagram, YouTube Shorts, LinkedIn and TikTok always have fresh, on-trend content. Built for D2C, fashion, F&B, real estate, fintech and personal brands.",
+    variant: "default",
+    keywords:
+      "social media content agency, Instagram Reels production, YouTube Shorts agency, TikTok content production, monthly content retainer, brand content calendar, founder content agency",
+    steps: [
+      { number: "01", title: "Strategy & Calendar", description: "Audience, pillars and 30-day content calendar mapped to your goals." },
+      { number: "02", title: "Monthly Shoot Day", description: "One studio + location day producing 30–60 pieces of content per month." },
+      { number: "03", title: "Edit & Caption", description: "Trend-aware editing, captions, hashtags, hooks — ready to publish." },
+      { number: "04", title: "Publish & Iterate", description: "We publish (or hand off), track performance and refine month-over-month." },
+    ],
+    deliverables: ["30–60 Reels / Shorts / month", "Static carousels & posts", "Captions, hashtags & hooks", "Monthly performance report"],
+    faqs: [
+      { q: "Just shoot or full management?", a: "Both — production-only or full content + community management." },
+      { q: "Do you handle founder content?", a: "Yes — heavy specialty in founder-led + executive content." },
+      { q: "Min retainer?", a: "Monthly retainer, 3-month minimum." },
+    ],
+    useCases: ["D2C brand pages", "Founder personal branding", "Real estate marketing", "F&B & restaurants", "Coaches & creators"],
+  },
   "scripts-storyboards": {
     slug: "scripts-storyboards",
     title: "AI Scriptwriting & Storyboarding",
@@ -175,6 +319,38 @@ export const serviceSlugMap: Record<string, string> = {
   "Brand Shoots": "brand-shoots",
   "AI Scriptwriting & Storyboarding": "scripts-storyboards",
   "Scriptwriting & Storyboarding": "scripts-storyboards",
+  "Performance Creative & Ad Iteration": "performance-creative",
+  "Motion Graphics & 2D/3D Animation": "motion-graphics",
+  "Podcast & Long-Form Video Production": "podcast-video",
+  "AI Avatars & Synthetic Presenters": "ai-avatars",
+  "E-commerce Product Video Ads": "ecommerce-video",
+  "Social Media Content & Reels Production": "social-content",
 };
 
 export const serviceList = Object.values(serviceDetails);
+
+export interface ToolItem {
+  name: string;
+  category: string;
+  description: string;
+}
+
+export const toolsWeUse: ToolItem[] = [
+  { name: "Sora", category: "AI Video", description: "OpenAI's flagship text-to-video for cinematic ad cuts and brand films." },
+  { name: "Veo 3", category: "AI Video", description: "Google DeepMind's high-fidelity video model with native audio generation." },
+  { name: "Runway Gen-4", category: "AI Video", description: "Production-grade AI video, motion brush and director-style camera control." },
+  { name: "Kling AI", category: "AI Video", description: "Long-form, ultra-realistic AI video for product, lifestyle and human action shots." },
+  { name: "Seedance", category: "AI Video", description: "ByteDance's text-and-image-to-video model for fast, social-native AI cuts." },
+  { name: "Luma Dream Machine", category: "AI Video", description: "Cinematic camera moves, ray-traced realism for AI b-roll and product reveals." },
+  { name: "Pika 2.0", category: "AI Video", description: "Fast iteration, lip-sync and stylized AI video for social and ads." },
+  { name: "Midjourney", category: "AI Image", description: "Reference frames, style frames and key art generation." },
+  { name: "Flux & Ideogram", category: "AI Image", description: "Photo-real product imagery, typography-aware ad statics and key visuals." },
+  { name: "HeyGen & Synthesia", category: "AI Avatars", description: "Photoreal AI presenters and digital twins for sales, training and ads." },
+  { name: "ElevenLabs", category: "AI Voice", description: "Voice cloning and multilingual VO in 30+ languages." },
+  { name: "Suno & Udio", category: "AI Music", description: "Custom AI scoring, jingles and sound beds for brand films." },
+  { name: "Adobe Premiere & After Effects", category: "Post Production", description: "Industry-standard edit, motion graphics and finishing pipeline." },
+  { name: "DaVinci Resolve", category: "Color & Finishing", description: "Cinema-grade color grading, HDR delivery and broadcast mastering." },
+  { name: "Blender & Cinema 4D", category: "3D Animation", description: "3D product, character and abstract animation for premium brand work." },
+  { name: "ARRI, RED & Sony Cinema Cameras", category: "Cinematography", description: "Hollywood-grade cinema cameras for our on-set ad film and brand shoots." },
+];
+

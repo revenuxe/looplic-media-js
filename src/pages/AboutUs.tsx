@@ -66,13 +66,13 @@ const AboutUs = () => {
       <AnimatedSection>
         <section className="py-16 md:py-28 px-4 sm:px-6 lg:px-12 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">AI Media Company</p>
+            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">AI Media Company · Est. 2025</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight mb-6">
               We're <span className="italic text-accent">Looplic</span> — AI-Powered
               <br className="hidden sm:block" /> Content for Modern Brands
             </h1>
             <p className="text-primary-foreground/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Looplic blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
+              Founded in 2025, Looplic blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
             </p>
           </div>
         </section>
@@ -90,10 +90,10 @@ const AboutUs = () => {
                 Brands today need more content than ever — across more platforms, in more formats, with shrinking timelines and budgets. Traditional production wasn't built for that.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
-                Looplic was built for it. We combine AI video generation, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
+                We started Looplic in <strong>2025</strong>, right as generative AI video tipped from "interesting demo" to genuinely production-grade. We combine AI video, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Today we work with D2C brands, agencies and startups to ship monthly content systems that compound into growth.
+                Today we partner with D2C brands, agencies and startups to ship monthly content systems that compound into growth — across ad films, UGC, product shoots and AI video.
               </p>
             </div>
             <div>

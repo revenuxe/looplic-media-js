@@ -3,22 +3,22 @@ import FooterSection from "@/components/FooterSection";
 import AnimatedSection from "@/components/AnimatedSection";
 import SEOHead from "@/components/SEOHead";
 
-const lastUpdated = "March 1, 2025";
+const lastUpdated = "January 15, 2025";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Privacy Policy – EverySpaces | How We Protect Your Data"
-        description="Read EverySpaces' privacy policy to understand how we collect, use, and protect your personal information. Your data security is our priority."
+        title="Privacy Policy | Looplic AI Media — How We Protect Your Data"
+        description="Read Looplic Media's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information."
         canonical="/privacy-policy"
-        keywords="EverySpaces privacy policy, data protection, personal information security, workspace consulting privacy"
+        keywords="Looplic privacy policy, AI media data protection, video production privacy, brand data protection, GDPR, DPDP India"
       />
       <Navbar />
       <AnimatedSection>
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-12 bg-primary text-primary-foreground">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Legal</p>
+            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Legal · Est. 2025</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight mb-4">Privacy Policy</h1>
             <p className="text-primary-foreground/70 text-sm">Last updated: {lastUpdated}</p>
           </div>
@@ -28,103 +28,109 @@ const PrivacyPolicy = () => {
       <AnimatedSection delay={0.1}>
         <section className="py-14 md:py-20 px-4 sm:px-6 lg:px-12">
           <div className="max-w-3xl mx-auto prose-sm sm:prose text-foreground">
-
             <h2 className="text-xl sm:text-2xl font-serif mb-4">1. Introduction</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              EverySpaces ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website, use our services, or interact with us in any way. By accessing or using our services, you agree to the terms of this Privacy Policy.
+              Looplic Media ("Looplic," "we," "our," or "us"), founded in 2025, is an AI-powered media and content production studio. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal and brand information when you visit our website, submit an inquiry, or engage us for AI video, ad film, UGC, product shoot, brand shoot, motion graphics or any related production service. By using our services, you agree to this Policy.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">2. Information We Collect</h2>
-            <h3 className="text-lg font-serif mb-2">2.1 Personal Information You Provide</h3>
+            <h3 className="text-lg font-serif mb-2">2.1 Information You Provide</h3>
             <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-4 space-y-1">
-              <li>Full name, email address, and phone number when you submit a contact or inquiry form</li>
-              <li>Business name, designation, and workspace requirements shared during consultations</li>
-              <li>Any other information you voluntarily provide through our website or communications</li>
+              <li>Full name, email, phone/WhatsApp number and company name submitted via our contact forms</li>
+              <li>Project briefs, brand assets, scripts, references and creative direction shared during engagement</li>
+              <li>Logos, product samples, photography, footage, voice samples and any creative materials provided for production</li>
+              <li>Billing and tax details (GSTIN, PAN, address) required for invoicing</li>
             </ul>
             <h3 className="text-lg font-serif mb-2">2.2 Automatically Collected Information</h3>
             <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-6 space-y-1">
-              <li>IP address, browser type, operating system, and device information</li>
-              <li>Pages visited, time spent, referral URLs, and click patterns</li>
-              <li>Cookies and similar tracking technologies (see Section 6)</li>
+              <li>IP address, browser, device, operating system and approximate location</li>
+              <li>Pages visited, time on site, referral source and click patterns</li>
+              <li>Cookies, pixels and analytics identifiers (see Section 7)</li>
             </ul>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">3. How We Use Your Information</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-2">We use the information we collect to:</p>
             <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-6 space-y-1">
-              <li>Respond to your inquiries and provide workspace consultation services</li>
-              <li>Match you with suitable office spaces and workspace solutions</li>
-              <li>Send service-related communications, updates, and follow-ups</li>
-              <li>Improve our website, services, and user experience</li>
-              <li>Comply with legal obligations and protect our rights</li>
-              <li>Prevent fraud, abuse, or unauthorized access to our services</li>
+              <li>Respond to inquiries, scope projects and send proposals</li>
+              <li>Plan, produce and deliver AI video, ad films, shoots, motion graphics and other commissioned content</li>
+              <li>Operate AI tools (Sora, Veo, Runway, Kling, ElevenLabs, HeyGen and similar) on your inputs to generate the deliverables you've engaged us for</li>
+              <li>Issue invoices, process payments and meet tax obligations</li>
+              <li>Send service updates, project status, and (with your consent) marketing communications</li>
+              <li>Improve our website, services, case studies and AI workflows</li>
+              <li>Detect, prevent and respond to fraud, abuse or security incidents</li>
             </ul>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">4. Information Sharing & Disclosure</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-2">We do <strong>not</strong> sell, trade, or rent your personal information. We may share your data only in the following circumstances:</p>
-            <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-6 space-y-1">
-              <li><strong>Service Partners:</strong> With workspace providers and property partners solely to fulfill your workspace requirements, with your consent</li>
-              <li><strong>Legal Compliance:</strong> When required by law, regulation, court order, or governmental authority</li>
-              <li><strong>Business Protection:</strong> To protect the rights, property, or safety of EverySpaces, our users, or the public</li>
-              <li><strong>Service Providers:</strong> With trusted third-party vendors who assist us in operating our website and services, bound by confidentiality agreements</li>
-            </ul>
-
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">5. Data Security</h2>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">4. AI Tools & Third-Party Models</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              We implement industry-standard security measures including SSL encryption, secure servers, access controls, and regular security audits to protect your personal information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security. You are responsible for maintaining the confidentiality of any account credentials.
+              To deliver our services we use third-party AI platforms including but not limited to OpenAI Sora, Google Veo, Runway, Kling, Luma, Pika, Seedance, Midjourney, Flux, ElevenLabs, HeyGen, Synthesia and Suno. Inputs you provide (briefs, scripts, references, brand assets, voice samples, likenesses) may be processed by these vendors strictly to generate your deliverables. We choose vendors with enterprise-grade privacy controls and, where available, opt out of model training on your data. We will never knowingly upload personally identifying information about third parties (e.g. talent likenesses) without proper consent.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">6. Cookies & Tracking Technologies</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-2">Our website uses cookies and similar technologies to:</p>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">5. Information Sharing</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-2">We do <strong>not</strong> sell or rent your data. We share information only with:</p>
+            <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-6 space-y-1">
+              <li><strong>Production partners:</strong> Directors, DOPs, editors, creators, models, stylists and crew strictly for project delivery, under confidentiality</li>
+              <li><strong>AI / SaaS vendors:</strong> Hosting, AI generation, analytics, payments and CRM tools that power our workflow</li>
+              <li><strong>Legal authorities:</strong> When required by law, court order or to protect our rights</li>
+              <li><strong>Successors:</strong> In the event of a merger, acquisition or sale of assets, with continuing privacy commitments</li>
+            </ul>
+
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">6. Brand Assets, Footage & Confidentiality</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              All brand assets, raw footage, scripts, voice samples and unreleased creative shared with Looplic are treated as confidential. We do not publish or repurpose your content without written consent. Final deliverables ownership is governed by your engagement agreement (typically transferred to you on full payment, with Looplic retaining rights to display the work in our portfolio unless restricted by NDA).
+            </p>
+
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">7. Cookies & Analytics</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-2">We use cookies and analytics tools (such as Google Analytics, Meta Pixel) to:</p>
             <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-4 space-y-1">
-              <li>Remember your preferences and provide a personalized experience</li>
-              <li>Analyze website traffic and usage patterns</li>
-              <li>Measure the effectiveness of our communications</li>
+              <li>Understand site traffic and content performance</li>
+              <li>Remember preferences and improve UX</li>
+              <li>Measure marketing campaign effectiveness</li>
             </ul>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              You can control cookies through your browser settings. Disabling cookies may affect the functionality of certain features on our website.
+              You can disable cookies via your browser; some features may degrade.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">7. Your Rights</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-2">You have the right to:</p>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">8. Data Security</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              We use SSL encryption, access controls, encrypted cloud storage, password-protected project shares and limited-access internal tooling. Despite these measures no online transmission is 100% secure; you accept this inherent risk in using digital services.
+            </p>
+
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">9. Data Retention</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              Project files are retained for up to 24 months post-delivery for revision/re-export needs, then archived or deleted. Inquiry data is deleted within 24 months of the last interaction unless an active engagement exists. Tax records are retained per Indian statutory requirements (typically 7 years).
+            </p>
+
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">10. Your Rights</h2>
             <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-6 space-y-1">
-              <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
-              <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
-              <li><strong>Deletion:</strong> Request deletion of your personal data, subject to legal obligations</li>
-              <li><strong>Opt-Out:</strong> Unsubscribe from marketing communications at any time</li>
-              <li><strong>Withdraw Consent:</strong> Withdraw previously given consent for data processing</li>
+              <li><strong>Access</strong> the data we hold on you</li>
+              <li><strong>Correct</strong> inaccurate information</li>
+              <li><strong>Delete</strong> your personal data, subject to legal obligations</li>
+              <li><strong>Withdraw consent</strong> for marketing or data processing at any time</li>
+              <li><strong>Object</strong> to specific uses of your data</li>
             </ul>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              To exercise any of these rights, please contact us at <strong>everyspaces.com@gmail.com</strong>.
+              Email <strong>hello@looplic.media</strong> to exercise any right.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">8. Data Retention</h2>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">11. Children's Privacy</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required or permitted by law. Inactive inquiry data is typically deleted within 24 months.
+              Our services are not directed to children under 18. We do not knowingly collect data from minors. Where minors appear as talent in productions, we require verifiable parental/guardian consent and applicable child labour & data compliance.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">9. Third-Party Links</h2>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">12. International Transfers</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review their privacy policies before providing any personal information.
+              Some AI vendors and cloud hosts process data outside India (typically the US/EU). By engaging us you consent to such transfers, with vendor-level safeguards in place.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">10. Children's Privacy</h2>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">13. Changes to This Policy</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected data from a minor, we will take steps to delete it promptly.
+              We may update this Policy as our services or laws evolve. The "Last updated" date will reflect changes. Continued use of our website or services constitutes acceptance.
             </p>
 
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">11. Changes to This Policy</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically. Continued use of our services after changes constitutes acceptance of the updated policy.
-            </p>
-
-            <h2 className="text-xl sm:text-2xl font-serif mb-4">12. Contact Us</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-2">
-              If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us:
-            </p>
+            <h2 className="text-xl sm:text-2xl font-serif mb-4">14. Contact</h2>
             <div className="bg-secondary rounded-xl p-5 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">EverySpaces</strong></p>
-              <p>HBR Layout, Bangalore, India</p>
-              <p>Email: everyspaces.com@gmail.com</p>
+              <p><strong className="text-foreground">Looplic Media</strong></p>
+              <p>Bangalore, India</p>
+              <p>Email: hello@looplic.media</p>
               <p>Phone: +91 98862 85028</p>
             </div>
           </div>

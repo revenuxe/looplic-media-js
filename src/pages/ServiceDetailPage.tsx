@@ -13,6 +13,12 @@ import imgUgc from "@/assets/svc-ugc.jpg";
 import imgAdfilm from "@/assets/svc-adfilm.jpg";
 import imgBrand from "@/assets/svc-brand-shoot.jpg";
 import imgScript from "@/assets/svc-script.jpg";
+import imgPerformance from "@/assets/svc-performance.jpg";
+import imgMotion from "@/assets/svc-motion.jpg";
+import imgPodcast from "@/assets/svc-podcast.jpg";
+import imgAvatar from "@/assets/svc-avatar.jpg";
+import imgEcom from "@/assets/svc-ecom-video.jpg";
+import imgSocial from "@/assets/svc-social.jpg";
 import heroImg from "@/assets/hero-adfilm.jpg";
 
 const slugImage: Record<string, string> = {
@@ -22,6 +28,12 @@ const slugImage: Record<string, string> = {
   "ad-film-production": imgAdfilm,
   "brand-shoots": imgBrand,
   "scripts-storyboards": imgScript,
+  "performance-creative": imgPerformance,
+  "motion-graphics": imgMotion,
+  "podcast-video": imgPodcast,
+  "ai-avatars": imgAvatar,
+  "ecommerce-video": imgEcom,
+  "social-content": imgSocial,
 };
 
 const ServiceDetailPage = () => {

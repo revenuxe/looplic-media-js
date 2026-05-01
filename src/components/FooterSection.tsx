@@ -6,16 +6,25 @@ type FooterLink = { label?: string; href?: string; isRoute?: boolean };
 const footerLinks: Record<string, FooterLink[]> = {
   "Quick Links": [
     { label: "Home", href: "/", isRoute: true },
+    { label: "All Services", href: "/services", isRoute: true },
     { label: "About Us", href: "/about", isRoute: true },
-    { label: "Contact Us", href: "#contact-form", isRoute: false },
+    { label: "Contact Us", href: "/contact", isRoute: true },
   ],
   Services: [
-    { label: "AI Video Generation", href: "/#service", isRoute: false },
-    { label: "Product Shoots", href: "/#service", isRoute: false },
-    { label: "UGC-Style Shoots", href: "/#service", isRoute: false },
-    { label: "Ad Film Production", href: "/#service", isRoute: false },
-    { label: "Brand Shoots", href: "/#service", isRoute: false },
-    { label: "Scriptwriting & Storyboarding", href: "/#service", isRoute: false },
+    { label: "AI Video Production", href: "/services/ai-video-production", isRoute: true },
+    { label: "Ad Film Production", href: "/services/ad-film-production", isRoute: true },
+    { label: "UGC & Creator Content", href: "/services/ugc-content", isRoute: true },
+    { label: "Performance Creative", href: "/services/performance-creative", isRoute: true },
+    { label: "E-commerce Video Ads", href: "/services/ecommerce-video", isRoute: true },
+    { label: "Motion Graphics", href: "/services/motion-graphics", isRoute: true },
+  ],
+  More: [
+    { label: "Product Photography", href: "/services/product-photography", isRoute: true },
+    { label: "Brand & Lifestyle Shoots", href: "/services/brand-shoots", isRoute: true },
+    { label: "Podcast Production", href: "/services/podcast-video", isRoute: true },
+    { label: "AI Avatars", href: "/services/ai-avatars", isRoute: true },
+    { label: "Social Media Reels", href: "/services/social-content", isRoute: true },
+    { label: "AI Scripts & Storyboards", href: "/services/scripts-storyboards", isRoute: true },
   ],
   Legal: [
     { label: "Privacy Policy", href: "/privacy-policy", isRoute: true },
@@ -62,7 +71,7 @@ const FooterSection = () => {
 
       {/* Footer links */}
       <div className="border-t border-border py-8 md:py-12 px-4 sm:px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 md:gap-8">
           <div className="col-span-2">
             <p className="text-sm text-muted-foreground max-w-xs mb-6">
               Looplic is an AI media company producing AI video, ad films, UGC-style content, and brand &amp; product shoots for modern brands.
