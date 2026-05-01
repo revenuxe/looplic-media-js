@@ -2,63 +2,63 @@ import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
 import AnimatedSection from "@/components/AnimatedSection";
 import SEOHead from "@/components/SEOHead";
-import { Quote, Building2, Home, Wifi, Users, Heart, Rocket } from "lucide-react";
+import { Quote, Sparkles, Film, Camera, Wand2, Heart, Rocket } from "lucide-react";
 
 const quotes = [
   {
-    text: "The office of the future is wherever you are — all you need is purpose, a good chair, and a strong Wi-Fi signal.",
-    author: "EverySpaces Team",
+    text: "The best content doesn't shout — it stops the scroll, then earns the click.",
+    author: "Looplic Team",
   },
   {
-    text: "Great workspaces don't just house people — they inspire movements, spark ideas, and build cultures.",
-    author: "Industry Insight",
+    text: "AI doesn't replace creativity. It removes the friction between an idea and the final cut.",
+    author: "On AI + Production",
   },
   {
-    text: "Remote work isn't about working from home. It's about working from anywhere life takes you.",
-    author: "The New Work Era",
+    text: "Brands win when they ship more, test more, and let great visuals do the heavy lifting.",
+    author: "Modern Marketing",
   },
 ];
 
 const pillars = [
   {
-    icon: Building2,
-    title: "Smart Office Solutions",
-    desc: "We help businesses discover and set up workspaces that match their culture, size, and ambitions — from coworking desks to entire floors.",
+    icon: Sparkles,
+    title: "AI Video & Visuals",
+    desc: "We use the latest generative AI models to produce videos, images and motion content tailored to your brand voice and platform.",
   },
   {
-    icon: Home,
-    title: "Home Office Essentials",
-    desc: "A productive home setup starts with ergonomic furniture, proper lighting, a dedicated quiet zone, and reliable high-speed internet.",
+    icon: Camera,
+    title: "Product & Brand Shoots",
+    desc: "Studio-grade product photography, lifestyle shoots, fashion, real estate and F&B — built for catalogs, ads and storefronts.",
   },
   {
-    icon: Wifi,
-    title: "Remote-Ready Infrastructure",
-    desc: "We guide teams on the tools and setups they need — from video conferencing gear to cloud collaboration platforms — so distance never limits output.",
+    icon: Film,
+    title: "Ad Films & UGC",
+    desc: "From performance-first ad films to creator-led UGC, we craft content designed to convert across Meta, YouTube, TikTok and more.",
   },
   {
-    icon: Users,
-    title: "Community & Culture",
-    desc: "Whether in-office or remote, we believe the best workspaces foster connection, creativity, and a sense of belonging among teams.",
+    icon: Wand2,
+    title: "Scripts & Storyboards",
+    desc: "AI-assisted scriptwriting, shot planning and storyboarding so every frame is intentional — and every shoot day runs tight.",
   },
 ];
 
-const homeSetupTips = [
-  "Invest in an ergonomic chair and adjustable desk — your body will thank you.",
-  "Natural light reduces eye strain and boosts mood. Position your desk near a window.",
-  "Use noise-cancelling headphones for deep focus during meetings and solo work.",
-  "Keep your workspace clutter-free. A tidy desk leads to a tidy mind.",
-  "Separate your work zone from your living zone — boundaries matter.",
-  "Ensure a stable internet connection with a backup plan for outages.",
+const workflowTips = [
+  "Start with the hook — the first 1.5 seconds decide everything.",
+  "Shoot once, edit ten ways. Modular content beats one big spot.",
+  "Mix AI-generated B-roll with real footage for cinematic depth.",
+  "Use UGC creators for trust, polished ads for scale — both, never one.",
+  "Storyboard before you shoot. Save days of post-production rework.",
+  "Always design for sound-off first, then layer in audio that pops.",
 ];
 
 const AboutUs = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="About EverySpaces – Bangalore's Trusted Workspace Consulting Firm | Est. 2025"
-        description="Learn about EverySpaces, Bangalore's expert workspace consultants founded in 2025. We help startups & enterprises find coworking spaces, private offices & remote work solutions across Bangalore."
+        title="About Looplic – AI Media Company Building Content That Performs"
+        description="Looplic is an AI media company combining generative AI with real production craft to ship ad films, UGC, product shoots and brand content faster."
         canonical="/about"
-        keywords="about EverySpaces, workspace consulting Bangalore, office space advisor, coworking consultant India, remote work solutions Bangalore, commercial real estate Bangalore, workspace strategy"
+        keywords="about Looplic, AI media agency, AI video studio, content production India, ad film studio, UGC agency, AI creative agency"
       />
       <Navbar />
 
@@ -66,13 +66,13 @@ const AboutUs = () => {
       <AnimatedSection>
         <section className="py-16 md:py-28 px-4 sm:px-6 lg:px-12 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Est. 2025</p>
+            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">AI Media Company</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight mb-6">
-              We're <span className="italic">EverySpaces</span> — Redefining
-              <br className="hidden sm:block" /> How India Works
+              We're <span className="italic text-accent">Looplic</span> — AI-Powered
+              <br className="hidden sm:block" /> Content for Modern Brands
             </h1>
             <p className="text-primary-foreground/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Founded in 2025 in the heart of Bangalore, EverySpaces was born from a simple belief: every professional deserves a workspace that fuels their best work — whether that's a buzzing coworking hub, a private office, or a thoughtfully designed home setup.
+              Looplic blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
             </p>
           </div>
         </section>
@@ -87,13 +87,13 @@ const AboutUs = () => {
                 Our <span className="italic">Story</span>
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
-                In early 2025, a group of workspace enthusiasts in Bangalore noticed a gap: finding the right commercial space was still painfully slow, opaque, and frustrating for growing businesses.
+                Brands today need more content than ever — across more platforms, in more formats, with shrinking timelines and budgets. Traditional production wasn't built for that.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
-                We set out to change that. EverySpaces brings together deep local market knowledge, a curated portfolio of premium spaces, and a consultative approach that puts your team's needs first.
+                Looplic was built for it. We combine AI video generation, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Today, we serve startups, SMEs, and enterprises across Bangalore — helping them find, set up, and thrive in workspaces that truly fit.
+                Today we work with D2C brands, agencies and startups to ship monthly content systems that compound into growth.
               </p>
             </div>
             <div>
@@ -101,26 +101,26 @@ const AboutUs = () => {
                 Our <span className="italic">Mission</span>
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
-                To make finding and managing workspaces effortless, so businesses can focus on what matters most — building, creating, and growing.
+                To make world-class content production effortless — so every brand can show up, stand out and scale.
               </p>
-              <div className="bg-secondary rounded-xl p-6 mt-6">
+              <div className="bg-card border border-border rounded-xl p-6 mt-6">
                 <div className="flex items-start gap-3">
                   <Heart size={24} className="text-accent shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-sm mb-1">Our Core Value</p>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      People over square footage. We believe the best workspace decisions start with understanding your team, your culture, and your vision.
+                      Story over spectacle. Tools change every month — what makes content land is craft, clarity and a sharp idea.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="bg-secondary rounded-xl p-6 mt-4">
+              <div className="bg-card border border-border rounded-xl p-6 mt-4">
                 <div className="flex items-start gap-3">
                   <Rocket size={24} className="text-accent shrink-0 mt-1" />
                   <div>
                     <p className="font-semibold text-sm mb-1">Our Vision</p>
                     <p className="text-muted-foreground text-sm leading-relaxed">
-                      To become India's most trusted workspace partner — bridging the gap between where people work and how well they work.
+                      To become the AI-native media partner brands trust to ship their next 1,000 pieces of content.
                     </p>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ const AboutUs = () => {
         <section className="py-14 md:py-20 px-4 sm:px-6 lg:px-12 bg-dark-green">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-serif text-primary-foreground text-center mb-10 md:mb-14">
-              Words We <span className="italic">Work</span> By
+              Words We <span className="italic">Create</span> By
             </h2>
             <div className="grid sm:grid-cols-3 gap-6">
               {quotes.map((q, i) => (
@@ -144,7 +144,7 @@ const AboutUs = () => {
                   <p className="text-primary-foreground/90 text-sm sm:text-base leading-relaxed mb-6 italic">
                     "{q.text}"
                   </p>
-                  <p className="text-lime text-xs font-semibold tracking-wide uppercase">— {q.author}</p>
+                  <p className="text-accent text-xs font-semibold tracking-wide uppercase">— {q.author}</p>
                 </div>
               ))}
             </div>
@@ -161,7 +161,7 @@ const AboutUs = () => {
             </h2>
             <div className="grid sm:grid-cols-2 gap-6">
               {pillars.map((p, i) => (
-                <div key={i} className="border border-border rounded-xl p-6 sm:p-8 hover:shadow-lg transition-shadow">
+                <div key={i} className="border border-border rounded-xl p-6 sm:p-8 hover:shadow-lg hover:border-accent/40 transition-all">
                   <p.icon size={32} className="text-accent mb-4" />
                   <h3 className="font-serif text-lg font-bold mb-2">{p.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
@@ -172,19 +172,19 @@ const AboutUs = () => {
         </section>
       </AnimatedSection>
 
-      {/* Home Setup Tips */}
+      {/* Workflow Tips */}
       <AnimatedSection delay={0.1}>
         <section className="py-14 md:py-20 px-4 sm:px-6 lg:px-12 bg-secondary">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-serif text-center mb-3">
-              Setting Up Your <span className="italic">Home Office</span>
+              How We <span className="italic">Make Content</span> That Performs
             </h2>
             <p className="text-muted-foreground text-sm text-center mb-10 max-w-xl mx-auto">
-              Whether you're going fully remote or hybrid, here's what every productive home workspace needs.
+              A few of the principles we follow on every project — from AI videos to full ad film shoots.
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
-              {homeSetupTips.map((tip, i) => (
-                <div key={i} className="flex items-start gap-3 bg-card rounded-xl p-5">
+              {workflowTips.map((tip, i) => (
+                <div key={i} className="flex items-start gap-3 bg-card border border-border rounded-xl p-5">
                   <span className="text-accent font-bold font-serif text-lg shrink-0">0{i + 1}</span>
                   <p className="text-sm text-muted-foreground leading-relaxed">{tip}</p>
                 </div>
