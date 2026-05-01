@@ -22,6 +22,7 @@ import CityLandingPage from "./pages/CityLandingPage";
 import ListingsPage from "./pages/ListingsPage";
 import PropertyDetailPage from "./pages/PropertyDetailPage";
 import ServiceDetailPage from "./pages/ServiceDetailPage";
+import ServicesPage from "./pages/ServicesPage";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:slug" element={<ServiceDetailPage />} />
           <Route path="/areas-we-serve" element={<AreasWeServePage />} />
           <Route path="/listings" element={<ListingsPage />} />
