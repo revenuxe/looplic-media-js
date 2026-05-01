@@ -44,23 +44,47 @@ const ServiceDetailPage = () => {
       />
       <Navbar />
 
-      {/* Hero */}
-      <section className="relative bg-secondary pt-10 sm:pt-16 pb-24 sm:pb-32 px-4 sm:px-6 lg:px-12 overflow-hidden">
-        <div className="max-w-7xl mx-auto relative z-10">
-          <Link to="/#service" className="text-accent text-sm font-medium uppercase tracking-wider">← Services</Link>
-          <h1 className="mt-4 text-4xl sm:text-5xl md:text-7xl font-serif leading-[1.1] text-foreground">
-            <span className="italic font-normal text-accent">{detail.title.split(" ")[0]}</span>{" "}
-            {detail.title.split(" ").slice(1).join(" ")}
-          </h1>
-          <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl">{detail.shortDesc}</p>
+      {/* Hero — same structure as homepage HeroSection */}
+      <section className="relative">
+        <div className="bg-secondary pt-10 sm:pt-16 pb-24 sm:pb-32 px-4 sm:px-6 lg:px-12 relative overflow-hidden">
+          {/* Hexagonal pattern overlay */}
+          <div className="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id={`hex-${detail.slug}`} width="56" height="100" patternUnits="userSpaceOnUse" patternTransform="scale(2)">
+                  <path d="M28 66L0 50L0 16L28 0L56 16L56 50L28 66Z" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-foreground" />
+                </pattern>
+              </defs>
+              <rect width="100%" height="100%" fill={`url(#hex-${detail.slug})`} />
+            </svg>
+          </div>
+          <div className="max-w-7xl mx-auto relative z-10">
+            <Link to="/#service" className="text-accent text-sm font-medium uppercase tracking-wider">← Services</Link>
+            <h1 className="mt-4 text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] sm:leading-tight text-foreground">
+              <span className="italic font-normal text-accent">{detail.title.split(" ")[0]}</span>{" "}
+              {detail.title.split(" ").slice(1).join(" ")}
+            </h1>
+            <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl">{detail.shortDesc}</p>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 -mt-16 sm:-mt-20 relative z-20">
+          <div className="rounded-lg sm:rounded-2xl overflow-hidden shadow-2xl">
+            <img src={image} alt={detail.title} width={1920} height={1080} className="w-full h-[200px] sm:h-[300px] md:h-[500px] object-cover" />
+          </div>
+          <div className="mt-6 sm:mt-8">
+            <Link
+              to="/contact"
+              className="flex items-center justify-between bg-accent text-accent-foreground font-semibold text-base sm:text-lg py-3 sm:py-4 pl-6 sm:pl-8 pr-3 sm:pr-4 rounded-full hover:opacity-90 transition-opacity"
+            >
+              <span>Start Your {detail.title} Project</span>
+              <span className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-accent-foreground/30 flex items-center justify-center ml-4">
+                <ArrowUpRight size={20} />
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 -mt-16 sm:-mt-20 relative z-20">
-        <div className="rounded-lg sm:rounded-2xl overflow-hidden shadow-2xl">
-          <img src={image} alt={detail.title} width={1600} height={900} className="w-full h-[220px] sm:h-[360px] md:h-[500px] object-cover" />
-        </div>
-      </div>
 
       {/* Long description */}
       <AnimatedSection>
@@ -164,7 +188,17 @@ const ServiceDetailPage = () => {
       <AnimatedSection>
         <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-12">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-10">Explore More Services</h2>
+            <div className="flex flex-col sm:flex-row items-start justify-between mb-8 md:mb-12 gap-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif max-w-2xl">
+                <span className="font-bold">Explore</span> More AI-Powered Production Services
+              </h2>
+              <Link
+                to="/contact"
+                className="hidden md:flex w-12 h-12 rounded-full border-2 border-foreground items-center justify-center hover:bg-foreground hover:text-primary-foreground transition-colors shrink-0"
+              >
+                <ArrowUpRight size={20} />
+              </Link>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
               {related.map((s) => {
                 const variantClass =
