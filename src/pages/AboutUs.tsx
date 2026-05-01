@@ -90,10 +90,10 @@ const AboutUs = () => {
                 Brands today need more content than ever — across more platforms, in more formats, with shrinking timelines and budgets. Traditional production wasn't built for that.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
-                Looplic was built for it. We combine AI video generation, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
+                We started Looplic in <strong>2025</strong>, right as generative AI video tipped from "interesting demo" to genuinely production-grade. We combine AI video, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
-                Today we work with D2C brands, agencies and startups to ship monthly content systems that compound into growth.
+                Today we partner with D2C brands, agencies and startups to ship monthly content systems that compound into growth — across ad films, UGC, product shoots and AI video.
               </p>
             </div>
             <div>
