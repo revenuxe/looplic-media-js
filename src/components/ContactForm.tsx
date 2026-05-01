@@ -1,39 +1,45 @@
 import { useState } from "react";
-import { X, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import heroImg from "@/assets/hero-workspace.png?format=webp";
+import heroImg from "@/assets/hero-adfilm.jpg";
 
 const leadSchema = z.object({
   full_name: z.string().trim().min(1, "Name is required").max(200, "Name is too long"),
   email: z.string().trim().email("Invalid email address").max(255, "Email is too long"),
-  phone: z.string().trim().max(30, "Phone number is too long").optional().or(z.literal("")),
-  team_size: z.string().max(20).optional().or(z.literal("")),
-  preferred_location: z.string().trim().max(300, "Location is too long").optional().or(z.literal("")),
-  nature_of_business: z.string().trim().max(300, "Business description is too long").optional().or(z.literal("")),
-  planned_timeline: z.string().max(50).optional().or(z.literal("")),
+  phone: z.string().trim().min(6, "Phone is required").max(30, "Phone number is too long"),
+  project_type: z.string().trim().min(1, "Project type is required").max(100),
+  brand: z.string().trim().max(200).optional().or(z.literal("")),
+  message: z.string().trim().max(2000).optional().or(z.literal("")),
 });
 
-const teamSizeOptions = ["1–5", "6–15", "16–30", "31–50", "50+"];
-const timelineOptions = [
-  "Immediately",
-  "Within 1 Month",
-  "1–3 Months",
-  "3–6 Months",
-  "Just Exploring",
+const projectTypes = [
+  "AI Video Production",
+  "Ad Film / TVC",
+  "UGC / Creator Content",
+  "Product Shoot",
+  "Brand / Lifestyle Shoot",
+  "Scriptwriting & Storyboarding",
+  "Not sure — need guidance",
 ];
 
-const ContactForm = () => {
+interface ContactFormProps {
+  defaultProjectType?: string;
+}
+
+const ContactForm = ({ defaultProjectType }: ContactFormProps) => {
+  const [searchParams] = useSearchParams();
+  const initialType = defaultProjectType || searchParams.get("service") || "";
+
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [teamSize, setTeamSize] = useState("");
-  const [location, setLocation] = useState("");
-  const [business, setBusiness] = useState("");
-  const [timeline, setTimeline] = useState("");
+  const [projectType, setProjectType] = useState(initialType);
+  const [brand, setBrand] = useState("");
+  const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
@@ -44,30 +50,28 @@ const ContactForm = () => {
 
     const result = leadSchema.safeParse({
       full_name: fullName,
-      email: email,
-      phone: phone,
-      team_size: teamSize,
-      preferred_location: location,
-      nature_of_business: business,
-      planned_timeline: timeline,
+      email,
+      phone,
+      project_type: projectType,
+      brand,
+      message,
     });
 
     if (!result.success) {
-      const firstError = result.error.errors[0]?.message || "Invalid input";
-      toast({ title: "Validation Error", description: firstError, variant: "destructive" });
+      toast({ title: "Validation Error", description: result.error.errors[0]?.message || "Invalid input", variant: "destructive" });
       setSubmitting(false);
       return;
     }
 
-    const validated = result.data;
+    const v = result.data;
+    // Reuse existing leads table columns
     const { error } = await supabase.from("leads").insert({
-      full_name: validated.full_name,
-      email: validated.email,
-      phone: validated.phone || null,
-      team_size: validated.team_size || null,
-      preferred_location: validated.preferred_location || null,
-      nature_of_business: validated.nature_of_business || null,
-      planned_timeline: validated.planned_timeline || null,
+      full_name: v.full_name,
+      email: v.email,
+      phone: v.phone,
+      preferred_location: v.project_type,
+      nature_of_business: v.brand || null,
+      planned_timeline: v.message ? v.message.slice(0, 50) : null,
     });
 
     setSubmitting(false);
@@ -82,26 +86,16 @@ const ContactForm = () => {
 
   const inputClass =
     "w-full px-4 py-3.5 rounded-xl border border-white/20 bg-white/10 text-primary-foreground text-base placeholder:text-primary-foreground/40 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/40 backdrop-blur-sm transition-all";
-
   const labelClass = "block text-sm font-medium text-primary-foreground/90 mb-1.5";
 
   return (
-    <section
-      id="contact-form"
-      className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden"
-    >
-      {/* Background image */}
+    <section id="contact-form" className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src={heroImg}
-          alt=""
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImg} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/85" />
       </div>
 
       <div className="max-w-xl mx-auto relative z-10">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +111,6 @@ const ContactForm = () => {
           </p>
         </motion.div>
 
-        {/* Glassmorphism Card */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -126,62 +119,28 @@ const ContactForm = () => {
           className="bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl shadow-black/20"
         >
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Full Name */}
             <div>
               <label className={labelClass}>Full Name</label>
-              <input
-                type="text"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                placeholder="Rahul Sharma"
-                required
-                className={inputClass}
-              />
+              <input type="text" value={fullName} onChange={(e) => setFullName(e.target.value)} placeholder="Your name" required className={inputClass} />
             </div>
 
-            {/* Email */}
             <div>
               <label className={labelClass}>Email</label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="rahul@company.com"
-                required
-                className={inputClass}
-              />
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@brand.com" required className={inputClass} />
             </div>
 
-            {/* Phone Number */}
             <div>
-              <label className={labelClass}>Phone Number</label>
-              <input
-                type="tel"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                placeholder="+91 98765 43210"
-                required
-                className={inputClass}
-              />
+              <label className={labelClass}>Phone / WhatsApp</label>
+              <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+91 98765 43210" required className={inputClass} />
             </div>
 
-            {/* Team Size */}
             <div>
-              <label className={labelClass}>Team Size</label>
+              <label className={labelClass}>What do you want to create?</label>
               <div className="relative">
-                <select
-                  value={teamSize}
-                  onChange={(e) => setTeamSize(e.target.value)}
-                  required
-                  className={`${inputClass} appearance-none cursor-pointer`}
-                >
-                  <option value="" disabled className="text-foreground bg-card">
-                    Select team size
-                  </option>
-                  {teamSizeOptions.map((opt) => (
-                    <option key={opt} value={opt} className="text-foreground bg-card">
-                      {opt}
-                    </option>
+                <select value={projectType} onChange={(e) => setProjectType(e.target.value)} required className={`${inputClass} appearance-none cursor-pointer`}>
+                  <option value="" disabled className="text-foreground bg-card">Select project type</option>
+                  {projectTypes.map((opt) => (
+                    <option key={opt} value={opt} className="text-foreground bg-card">{opt}</option>
                   ))}
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
@@ -192,75 +151,21 @@ const ContactForm = () => {
               </div>
             </div>
 
-            {/* Project Type / Preferred Service */}
             <div>
-              <label className={labelClass}>Project Type</label>
-              <div className="relative">
-                <input
-                  type="text"
-                  value={location}
-                  onChange={(e) => setLocation(e.target.value)}
-                  placeholder="AI video, product shoot, ad film, UGC…"
-                  required
-                  className={`${inputClass} pr-10`}
-                />
-                {location && (
-                  <button
-                    type="button"
-                    onClick={() => setLocation("")}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-primary-foreground/20 flex items-center justify-center hover:bg-primary-foreground/30 transition-colors backdrop-blur-sm"
-                  >
-                    <X size={12} className="text-primary-foreground" />
-                  </button>
-                )}
-              </div>
+              <label className={labelClass}>Brand / Company (optional)</label>
+              <input type="text" value={brand} onChange={(e) => setBrand(e.target.value)} placeholder="Brand name & industry" className={inputClass} />
             </div>
 
-            {/* Brand / Industry */}
             <div>
-              <label className={labelClass}>Brand &amp; Industry</label>
-              <input
-                type="text"
-                value={business}
-                onChange={(e) => setBusiness(e.target.value)}
-                placeholder="D2C beauty brand, SaaS, real estate…"
-                className={inputClass}
-              />
+              <label className={labelClass}>Tell us about your project (optional)</label>
+              <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Goals, references, timeline, budget…" rows={4} className={inputClass} />
             </div>
 
-            {/* Planned Occupancy Timeline */}
-            <div>
-              <label className={labelClass}>Planned Occupancy Timeline</label>
-              <div className="relative">
-                <select
-                  value={timeline}
-                  onChange={(e) => setTimeline(e.target.value)}
-                  required
-                  className={`${inputClass} appearance-none cursor-pointer`}
-                >
-                  <option value="" disabled className="text-foreground bg-card">
-                    Select timeline
-                  </option>
-                  {timelineOptions.map((opt) => (
-                    <option key={opt} value={opt} className="text-foreground bg-card">
-                      {opt}
-                    </option>
-                  ))}
-                </select>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" className="text-primary-foreground/50">
-                    <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Submit Button */}
             <div className="pt-3">
               <button
                 type="submit"
                 disabled={submitting}
-                className="w-full bg-primary-foreground text-primary font-semibold text-base py-4 rounded-full hover:scale-[1.02] active:scale-[0.98] transition-transform shadow-lg shadow-black/10 disabled:opacity-60"
+                className="w-full bg-accent text-accent-foreground font-semibold text-base py-4 rounded-full hover:scale-[1.02] active:scale-[0.98] transition-transform shadow-lg shadow-black/10 disabled:opacity-60"
               >
                 {submitting ? (
                   <span className="inline-flex items-center gap-2">

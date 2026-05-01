@@ -21,6 +21,7 @@ import AreasWeServePage from "./pages/AreasWeServePage";
 import CityLandingPage from "./pages/CityLandingPage";
 import ListingsPage from "./pages/ListingsPage";
 import PropertyDetailPage from "./pages/PropertyDetailPage";
+import ServiceDetailPage from "./pages/ServiceDetailPage";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +48,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
           <Route path="/thank-you" element={<ThankYou />} />
+          <Route path="/services/:slug" element={<ServiceDetailPage />} />
           <Route path="/areas-we-serve" element={<AreasWeServePage />} />
           <Route path="/listings" element={<ListingsPage />} />
           <Route path="/listings/:slug" element={<PropertyDetailPage />} />

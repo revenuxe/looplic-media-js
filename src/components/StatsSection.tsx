@@ -12,15 +12,15 @@ const StatsSection = () => {
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-10 md:mb-16">
           <div>
             <h3 className="text-lg sm:text-xl font-semibold font-sans mb-3">
-              From AI video to product shoots — we build content that actually performs
+              India's AI video, ad film &amp; UGC content production agency
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Whether you need a scroll-stopping ad film, UGC-style creator content, or a polished brand shoot — Looplic blends AI tools with real production craft to ship faster, smarter content.
+              From AI-generated commercials and TVCs to product photography, UGC ads and brand films — Looplic helps D2C brands, SaaS and agencies ship high-performing content 10x faster, at a fraction of traditional production cost.
             </p>
           </div>
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif leading-snug">
-              <span className="font-bold">We Make Brands</span> Stand Out With AI-Driven Storytelling.
+              <span className="font-bold">AI Video Production</span>, Ad Films &amp; Content That Actually Converts.
             </h2>
           </div>
         </div>

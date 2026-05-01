@@ -1,192 +1,180 @@
 export interface ServiceDetail {
+  slug: string;
   title: string;
-  desc: string;
+  shortDesc: string;
+  longDesc: string;
   variant: "default" | "lime" | "orange";
-  steps: {
-    number: string;
-    title: string;
-    description: string;
-  }[];
+  keywords: string;
+  steps: { number: string; title: string; description: string }[];
   deliverables: string[];
+  faqs: { q: string; a: string }[];
+  useCases: string[];
 }
 
 export const serviceDetails: Record<string, ServiceDetail> = {
-  "workspace-consulting": {
-    title: "Workspace Consulting",
-    desc: "Expert guidance to help you find and optimize the perfect workspace for your team.",
+  "ai-video-production": {
+    slug: "ai-video-production",
+    title: "Cinematic AI Video Production",
+    shortDesc:
+      "AI-generated cinematic videos, ad reels and social cuts — concept to final master, in days, not months.",
+    longDesc:
+      "Looplic blends generative AI video models (Sora, Veo, Runway, Kling) with real cinematic craft to produce ads, brand films, explainers, talking-head avatars and viral social cuts. From script to a polished, broadcast-ready master, we deliver cinematic AI video production at a fraction of the cost and time of a traditional shoot — without compromising on storytelling, visual quality or brand consistency.",
     variant: "default",
+    keywords:
+      "AI video production, AI video generation services, generative AI ads, Sora video agency, Runway video production, AI commercial maker, AI video agency India",
     steps: [
-      {
-        number: "01",
-        title: "Discovery Call",
-        description: "We start with a deep-dive conversation to understand your team size, work culture, budget, and growth plans.",
-      },
-      {
-        number: "02",
-        title: "Workspace Audit",
-        description: "Our experts assess your current setup — identifying inefficiencies, underused areas, and opportunities for improvement.",
-      },
-      {
-        number: "03",
-        title: "Strategy Blueprint",
-        description: "We deliver a tailored workspace strategy with layout recommendations, cost analysis, and implementation timelines.",
-      },
-      {
-        number: "04",
-        title: "Execution & Support",
-        description: "We guide you through implementation, vendor coordination, and provide ongoing support to ensure success.",
-      },
+      { number: "01", title: "Brief & AI Concepting", description: "We translate your brand goals into AI-ready prompts, references and a creative direction deck." },
+      { number: "02", title: "Script & Storyboard", description: "AI-assisted script + frame-by-frame storyboard so every shot earns its place." },
+      { number: "03", title: "Generate & Direct", description: "We run multi-model generations (Sora, Veo, Runway, Kling) and curate the best takes." },
+      { number: "04", title: "Edit, Sound & Master", description: "Cinematic edit, color, AI VO, music and sound design — delivered in every aspect ratio you need." },
     ],
-    deliverables: ["Workspace Assessment Report", "Custom Floor Plan Recommendations", "Cost-Benefit Analysis", "90-Day Implementation Roadmap"],
+    deliverables: [
+      "Master 16:9 cinematic cut",
+      "9:16 Reels / Shorts / TikTok versions",
+      "1:1 feed cut + 6s and 15s ad variants",
+      "Source files + thumbnails",
+    ],
+    faqs: [
+      { q: "How fast can you deliver an AI video?", a: "Most ad-length AI videos ship within 5–10 working days from approved script." },
+      { q: "Will it look on-brand?", a: "Yes — we lock style, palette and characters with reference frames and LoRA-style consistency techniques." },
+      { q: "Can I use it on TV / YouTube ads?", a: "Absolutely. We deliver broadcast and YouTube-ready masters in 4K." },
+    ],
+    useCases: ["Performance ads", "Brand films", "Product launch teasers", "Explainer videos", "Social reels at scale"],
   },
-  "space-search-acquisition": {
-    title: "Space Search & Acquisition",
-    desc: "Professional assistance with finding, leasing, and acquiring high-value workspace properties efficiently.",
+  "product-photography": {
+    slug: "product-photography",
+    title: "Product Photography & Shoots",
+    shortDesc:
+      "Studio + lifestyle product photography that makes your e-commerce, ads and storefront convert.",
+    longDesc:
+      "From clean white-background catalog shots to scroll-stopping lifestyle imagery, our product photography service is built for D2C brands, marketplaces and ad campaigns. We handle everything — styling, lighting, props, retouching — and deliver Amazon-ready, Shopify-ready and ad-ready visuals that lift CTR and conversions.",
     variant: "default",
+    keywords:
+      "product photography Bangalore, ecommerce product shoot, Amazon product photography, D2C product shoot, lifestyle product photography agency",
     steps: [
-      {
-        number: "01",
-        title: "Requirements Gathering",
-        description: "We map your exact needs — location preferences, capacity, amenities, lease terms, and budget constraints.",
-      },
-      {
-        number: "02",
-        title: "Curated Shortlist",
-        description: "Our team scours the market and presents a handpicked selection of spaces that match your criteria perfectly.",
-      },
-      {
-        number: "03",
-        title: "Site Visits & Evaluation",
-        description: "We arrange guided tours, evaluate each space against your checklist, and provide detailed comparison reports.",
-      },
-      {
-        number: "04",
-        title: "Negotiation & Closing",
-        description: "We handle lease negotiations, legal review coordination, and ensure you get the best terms possible.",
-      },
+      { number: "01", title: "Shot List & Mood Board", description: "We align on angles, props, lifestyle scenarios and final use cases." },
+      { number: "02", title: "Studio / Location Shoot", description: "Full crew, lighting and styling — studio or on-location." },
+      { number: "03", title: "Retouching & Color", description: "Pixel-perfect retouching, shadow work and color matching to your brand." },
+      { number: "04", title: "Delivery & Variants", description: "Marketplace-ready, ad-ready and social-ready crops in every size." },
     ],
-    deliverables: ["Market Comparison Report", "Top 5 Space Shortlist", "Lease Negotiation Support", "Move-in Coordination Plan"],
+    deliverables: ["White-background catalog images", "Lifestyle / in-use shots", "Hero banners + ad creatives", "All marketplace size variants"],
+    faqs: [
+      { q: "Do you shoot at our location?", a: "Yes — we shoot at our studio or on location anywhere in India." },
+      { q: "Turnaround?", a: "Typically 7–14 days from shoot day, depending on volume." },
+      { q: "Can you do bulk catalog shoots?", a: "Yes, we handle 50–500+ SKUs efficiently." },
+    ],
+    useCases: ["D2C product launches", "Amazon / Flipkart catalog", "Shopify storefronts", "Performance ad creatives", "Print & OOH"],
   },
-  "office-interior-design": {
-    title: "Office Interior Design",
-    desc: "End-to-end office interior solutions — from concept ideation to final execution.",
+  "ugc-content": {
+    slug: "ugc-content",
+    title: "UGC & Creator-Style Content",
+    shortDesc:
+      "Authentic creator and actor-led UGC built for Reels, Shorts and TikTok — designed to convert.",
+    longDesc:
+      "We produce high-volume UGC-style ads featuring vetted creators and actors who match your audience. Native, raw, scroll-native — built for Meta, TikTok, YouTube Shorts and influencer campaigns. Perfect for D2C brands, apps and SaaS that need a constant stream of testable ad creatives.",
     variant: "orange",
+    keywords:
+      "UGC agency India, UGC ads, creator content agency, TikTok ads UGC, Meta ads UGC creators, performance creative agency",
     steps: [
-      {
-        number: "01",
-        title: "Vision & Moodboarding",
-        description: "We collaborate on your brand aesthetic, functional needs, and create inspiring mood boards that capture your vision.",
-      },
-      {
-        number: "02",
-        title: "Space Planning & 3D Design",
-        description: "Our designers create detailed floor plans, 3D renders, and material palettes for your review and approval.",
-      },
-      {
-        number: "03",
-        title: "Procurement & Build",
-        description: "We manage everything — furniture sourcing, contractor coordination, and quality control throughout construction.",
-      },
-      {
-        number: "04",
-        title: "Handover & Styling",
-        description: "Final touches, styling, and a walkthrough to ensure every detail meets your expectations before move-in day.",
-      },
+      { number: "01", title: "Brief & Creator Casting", description: "We cast 1–10 creators matching your audience demo and brand voice." },
+      { number: "02", title: "Hooks & Scripts", description: "We write 5–15 hooks per concept, optimized for the algorithm." },
+      { number: "03", title: "Shoot & Iterate", description: "Creators shoot raw, native, vertical content with multiple variations." },
+      { number: "04", title: "Edit & Captions", description: "Fast cuts, captions, B-roll and platform-native edits delivered weekly." },
     ],
-    deliverables: ["Mood Board & Concept Deck", "3D Renders & Floor Plans", "Furniture & Material Specifications", "Project Timeline & Budget Tracker"],
+    deliverables: ["10–50 UGC ad variations / month", "Hooks, B-roll, talking heads", "9:16 Reels/Shorts/TikTok ready", "Captioned + raw versions"],
+    faqs: [
+      { q: "Do you provide the creators?", a: "Yes, fully vetted creators across age groups, languages and niches." },
+      { q: "Can we send our product?", a: "Yes — we handle logistics, briefing and shoot." },
+      { q: "Volume per month?", a: "Typical retainers deliver 20–50 ad variations per month." },
+    ],
+    useCases: ["Meta & TikTok performance ads", "App install campaigns", "Influencer-style brand content", "Testimonial reels"],
   },
-  "market-research-analysis": {
-    title: "Market Research & Analysis",
-    desc: "In-depth analysis and insights to guide informed decisions in workspace investment opportunities.",
+  "ad-film-production": {
+    slug: "ad-film-production",
+    title: "Ad Film Production",
+    shortDesc:
+      "End-to-end ad film production — concept, direction, shoot, post — for brand and performance.",
+    longDesc:
+      "From a 6-second performance hook to a 60-second hero film, we handle the entire ad film production pipeline: pre-production, casting, direction, cinematography, editing, color, sound and delivery. Whether you need a TVC, a YouTube pre-roll, an OTT spot or a digital brand film, our team executes with cinematic polish.",
     variant: "default",
+    keywords:
+      "ad film production company, TVC production, commercial film production India, YouTube ad agency, performance ad film, brand film production",
     steps: [
-      {
-        number: "01",
-        title: "Define Research Scope",
-        description: "We identify your key questions — market trends, competitor analysis, pricing benchmarks, or location viability.",
-      },
-      {
-        number: "02",
-        title: "Data Collection",
-        description: "Our analysts gather data from proprietary databases, market surveys, and on-ground intelligence networks.",
-      },
-      {
-        number: "03",
-        title: "Analysis & Insights",
-        description: "We synthesize raw data into actionable insights with visual dashboards, trend forecasts, and risk assessments.",
-      },
-      {
-        number: "04",
-        title: "Strategic Recommendations",
-        description: "A final report with clear recommendations, opportunity mapping, and decision frameworks tailored to your goals.",
-      },
+      { number: "01", title: "Creative & Script", description: "Concept development, scripting and reference decks aligned to your KPIs." },
+      { number: "02", title: "Pre-production", description: "Casting, locations, art direction, shot list and full pre-production planning." },
+      { number: "03", title: "Direction & Shoot", description: "Director-led shoot with cinema-grade cameras, lighting and sound." },
+      { number: "04", title: "Edit, Color, Sound, VFX", description: "Polished edit, grade, mix, VFX and final master delivered in every cut-down." },
     ],
-    deliverables: ["Market Intelligence Report", "Competitor Landscape Analysis", "Pricing & Demand Forecast", "Investment Risk Assessment"],
+    deliverables: ["Hero ad film (30s/60s)", "Cut-downs (6s, 10s, 15s)", "All aspect ratios", "BTS reel + still frames"],
+    faqs: [
+      { q: "Do you handle casting?", a: "Yes — actors, models, voice artists and creators." },
+      { q: "Where do you shoot?", a: "Across India — Bangalore, Mumbai, Delhi, Hyderabad and beyond." },
+      { q: "Timelines?", a: "3–6 weeks from brief to final master, depending on scope." },
+    ],
+    useCases: ["TVCs & OTT spots", "YouTube hero campaigns", "Brand films", "Product launch films"],
   },
-  "workspace-management": {
-    title: "Workspace Management Services",
-    desc: "Comprehensive workspace management to maximize occupancy, minimize costs, and enhance space value.",
+  "brand-shoots": {
+    slug: "brand-shoots",
+    title: "Brand & Lifestyle Shoots",
+    shortDesc:
+      "Fashion, F&B, real estate and lifestyle brand shoots that elevate your visual identity.",
+    longDesc:
+      "Premium brand shoots for fashion labels, real estate developers, restaurants and lifestyle brands. From look-books and editorial campaigns to property walkthroughs and menu shoots, we deliver imagery that makes your brand feel iconic and instantly recognizable.",
     variant: "lime",
+    keywords:
+      "brand shoot agency, fashion photography Bangalore, real estate photography, restaurant food photography, lifestyle brand campaign",
     steps: [
-      {
-        number: "01",
-        title: "Onboarding & Assessment",
-        description: "We audit your current operations, identify pain points, and establish KPIs for workspace performance.",
-      },
-      {
-        number: "02",
-        title: "Operations Setup",
-        description: "We implement management systems, vendor partnerships, and standard operating procedures for smooth daily operations.",
-      },
-      {
-        number: "03",
-        title: "Ongoing Management",
-        description: "Our team handles day-to-day operations — maintenance, tenant relations, space optimization, and cost control.",
-      },
-      {
-        number: "04",
-        title: "Performance Reporting",
-        description: "Monthly reports with occupancy metrics, financial summaries, and improvement recommendations to keep you informed.",
-      },
+      { number: "01", title: "Brand Discovery", description: "Deep dive into your brand voice, audience and visual references." },
+      { number: "02", title: "Creative Direction", description: "Mood board, styling, locations, casting and shot list." },
+      { number: "03", title: "Production Day", description: "Full crew — photographer, stylist, HMU, lighting, set." },
+      { number: "04", title: "Post & Delivery", description: "Retouching, color and final delivery in every format." },
     ],
-    deliverables: ["Operations Playbook", "Vendor Management System", "Monthly Performance Dashboard", "Cost Optimization Report"],
+    deliverables: ["Editorial look-book", "Campaign hero images", "Social grid + reels stills", "Web + print masters"],
+    faqs: [
+      { q: "Do you offer styling?", a: "Yes — full styling, HMU and art direction included." },
+      { q: "Real estate walkthroughs?", a: "Yes — stills, drone and walkthrough video." },
+      { q: "F&B / menu shoots?", a: "Yes, plated food, beverage and lifestyle restaurant imagery." },
+    ],
+    useCases: ["Fashion campaigns", "Real estate marketing", "Restaurant & cafe branding", "Hospitality & lifestyle"],
   },
-  "custom-workspace-strategies": {
-    title: "Custom Workspace Strategies",
-    desc: "Tailored strategies designed to meet your specific business goals, preferences, and growth profile.",
+  "scripts-storyboards": {
+    slug: "scripts-storyboards",
+    title: "AI Scriptwriting & Storyboarding",
+    shortDesc:
+      "AI-assisted scripts, shot planning and storyboards so every frame has a purpose.",
+    longDesc:
+      "Great content starts with a great script. We pair senior copy and creative directors with AI tooling to generate, refine and pressure-test scripts, hooks and storyboards — for ads, brand films, AI video, UGC and explainers. Faster ideation, sharper hooks, fewer reshoots.",
     variant: "default",
+    keywords:
+      "AI scriptwriting agency, ad copywriting, storyboard service, ad concept development, video script writer India",
     steps: [
-      {
-        number: "01",
-        title: "Business Deep-Dive",
-        description: "We analyze your business model, growth trajectory, team dynamics, and long-term vision to understand your unique needs.",
-      },
-      {
-        number: "02",
-        title: "Strategy Development",
-        description: "Our team crafts a bespoke workspace strategy covering location, design, technology, and scalability planning.",
-      },
-      {
-        number: "03",
-        title: "Pilot & Validation",
-        description: "We implement a pilot phase, gather feedback, and iterate to ensure the strategy delivers measurable results.",
-      },
-      {
-        number: "04",
-        title: "Scale & Evolve",
-        description: "Roll out the refined strategy across your organization with continuous optimization and quarterly reviews.",
-      },
+      { number: "01", title: "Discovery & Insight", description: "We understand your audience, offer, KPIs and brand voice." },
+      { number: "02", title: "Concepts & Hooks", description: "10+ hooks and 3+ concept routes per brief, AI-assisted, human-curated." },
+      { number: "03", title: "Script & Storyboard", description: "Final scripts with frame-by-frame storyboards, references and shot notes." },
+      { number: "04", title: "Iteration & Handover", description: "Two rounds of revisions, then production-ready handover." },
     ],
-    deliverables: ["Custom Strategy Document", "Implementation Roadmap", "Pilot Program Results", "Quarterly Review Framework"],
+    deliverables: ["10+ hooks", "3+ concept routes", "Final shooting script", "Visual storyboard PDF"],
+    faqs: [
+      { q: "Can you just write scripts?", a: "Yes — script-only and storyboard-only engagements available." },
+      { q: "Languages?", a: "English, Hindi, Hinglish, Tamil, Telugu, Kannada and more." },
+      { q: "How many revisions?", a: "Two rounds included; additional rounds at small fee." },
+    ],
+    useCases: ["Ad scripts", "AI video prompts", "UGC briefs", "Brand film scripts", "Explainer videos"],
   },
 };
 
 export const serviceSlugMap: Record<string, string> = {
-  "Workspace Consulting": "workspace-consulting",
-  "Space Search & Acquisition": "space-search-acquisition",
-  "Office Interior Design": "office-interior-design",
-  "Market Research & Analysis": "market-research-analysis",
-  "Workspace Management Services": "workspace-management",
-  "Workspace Management": "workspace-management",
-  "Custom Workspace Strategies": "custom-workspace-strategies",
+  "Cinematic AI Video Production": "ai-video-production",
+  "AI Video Generation": "ai-video-production",
+  "Product Photography & Shoots": "product-photography",
+  "Product Shoots": "product-photography",
+  "UGC & Creator-Style Content": "ugc-content",
+  "UGC-Style Shoots": "ugc-content",
+  "Ad Film Production": "ad-film-production",
+  "Brand & Lifestyle Shoots": "brand-shoots",
+  "Brand Shoots": "brand-shoots",
+  "AI Scriptwriting & Storyboarding": "scripts-storyboards",
+  "Scriptwriting & Storyboarding": "scripts-storyboards",
 };
+
+export const serviceList = Object.values(serviceDetails);
