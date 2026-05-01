@@ -95,7 +95,7 @@ const TermsConditions = () => {
               Each project includes the number of revision rounds defined in the SOW (typically 2 rounds at script, 2 at edit). Additional revisions or scope changes are billed at our standard hourly/day rate or per a change-order quote.
             </p>
 
-            <h2 className="text-xl sm:text-2xl function-serif mb-4">8. Intellectual Property</h2>
+            <h2 className="text-xl sm:text-xl sm:text-2xl font-serif mb-4">8. Intellectual Property</h2>
             <h3 className="text-lg font-serif mb-2">8.1 Your IP</h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               All brand assets, scripts and inputs you provide remain your property.
