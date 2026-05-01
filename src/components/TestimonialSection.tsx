@@ -6,9 +6,9 @@ const TestimonialSection = () => {
     <section id="testimonial" className="py-12 md:py-20 px-4 sm:px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center mb-8 md:mb-12">
-          <span className="italic font-bold">Customer</span> Experiences Real
+          <span className="italic font-bold">Brands</span> That Ship Faster
           <br />
-          Success Stories with EverySpaces
+          and Look Sharper with Looplic
         </h2>
 
         <div className="relative rounded-none overflow-hidden min-h-[300px] sm:min-h-[400px]">
@@ -28,15 +28,15 @@ const TestimonialSection = () => {
                 </div>
               </div>
               <p className="text-foreground text-sm sm:text-base leading-relaxed mb-6">
-                "EverySpaces helped us find the ideal office in Koramangala within a week. Their local expertise in Bangalore's commercial market is unmatched — we couldn't have done it without them!"
+                "Looplic delivered a full month of ad creatives and UGC-style videos in under two weeks. The AI workflow is wild — and the output actually performs on Meta and YouTube."
               </p>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-foreground font-bold text-sm">
+                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-bold text-sm">
                   RK
                 </div>
                 <div>
                   <p className="font-bold text-sm text-foreground">Rahul Krishnan</p>
-                  <p className="text-muted-foreground text-xs">Bangalore</p>
+                  <p className="text-muted-foreground text-xs">Head of Growth, D2C Brand</p>
                 </div>
               </div>
             </div>

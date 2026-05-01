@@ -13,38 +13,38 @@ import serviceStrategy from "@/assets/service-strategy.png?format=webp";
 const services = [
   {
     image: serviceConsulting,
-    title: "Workspace Consulting",
-    desc: "Expert guidance to help you find and optimize the perfect workspace for your team.",
+    title: "AI Video Generation",
+    desc: "Cinematic, social-ready videos generated with AI — from concept to final cut, in a fraction of the time.",
     variant: "default" as const,
   },
   {
     image: serviceSearch,
-    title: "Space Search & Acquisition",
-    desc: "Professional assistance with finding, leasing, and acquiring high-value workspace properties efficiently.",
+    title: "Product Shoots",
+    desc: "Studio and lifestyle product photography that makes your catalog, ads and storefront irresistible.",
     variant: "default" as const,
   },
   {
     image: serviceInterior,
-    title: "Office Interior Design",
-    desc: "End-to-end office interior solutions — from concept ideation to final execution — creating inspiring workspaces that boost productivity.",
+    title: "UGC-Style Shoots",
+    desc: "Authentic creator and actor-led content built for TikTok, Reels and Shorts — designed to convert.",
     variant: "orange" as const,
   },
   {
     image: serviceResearch,
-    title: "Market Research & Analysis",
-    desc: "In-depth analysis and insights to guide informed decisions in workspace investment opportunities.",
+    title: "Ad Film Production",
+    desc: "End-to-end ad film production — concept, direction, shoot and post — for performance and brand campaigns.",
     variant: "default" as const,
   },
   {
     image: serviceManagement,
-    title: "Workspace Management Services",
-    desc: "Comprehensive workspace management to maximize occupancy, minimize costs, and enhance space value.",
+    title: "Brand Shoots",
+    desc: "Fashion, real estate, F&B and lifestyle brand shoots crafted to elevate your visual identity.",
     variant: "lime" as const,
   },
   {
     image: serviceStrategy,
-    title: "Custom Workspace Strategies",
-    desc: "Tailored strategies designed to meet your specific business goals, preferences, and growth profile.",
+    title: "Scriptwriting & Storyboarding",
+    desc: "AI-assisted scriptwriting, shot planning and storyboarding so every frame has a purpose.",
     variant: "default" as const,
   },
 ];
@@ -226,7 +226,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row items-start justify-between mb-8 md:mb-12 gap-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif max-w-xl">
-            <span className="font-bold">Expert</span> Office Space &amp; Coworking Solutions for Growing Teams
+            <span className="font-bold">AI-Powered</span> Media Services for Modern Brands
           </h2>
           <a
             href="/contact"

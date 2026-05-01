@@ -1,8 +1,8 @@
 const stats = [
-  { number: "92%", label: "Client Retention Rate" },
-  { number: "3.5x", label: "Avg. Productivity Boost" },
-  { number: "40%", label: "Cost Savings Achieved" },
-  { number: "< 59 min", label: "Avg. Response Time" },
+  { number: "500+", label: "Pieces of Content Delivered" },
+  { number: "10x", label: "Faster Production with AI" },
+  { number: "60%", label: "Lower Cost vs Traditional" },
+  { number: "< 48 hrs", label: "Avg. Turnaround Time" },
 ];
 
 const StatsSection = () => {
@@ -12,15 +12,15 @@ const StatsSection = () => {
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-10 md:mb-16">
           <div>
             <h3 className="text-lg sm:text-xl font-semibold font-sans mb-3">
-              Helping teams find the best coworking space, managed office &amp; flexible workspace near you
+              From AI video to product shoots — we build content that actually performs
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Whether you need a private office for rent, shared desk, or a fully managed workspace — we match you with the right space in top business locations across India's leading tech cities.
+              Whether you need a scroll-stopping ad film, UGC-style creator content, or a polished brand shoot — Looplic blends AI tools with real production craft to ship faster, smarter content.
             </p>
           </div>
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif leading-snug">
-              <span className="font-bold">We Make Workspaces</span> Thrive With Expert Management Strategies.
+              <span className="font-bold">We Make Brands</span> Stand Out With AI-Driven Storytelling.
             </h2>
           </div>
         </div>

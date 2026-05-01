@@ -17,7 +17,7 @@ const SEOHead = ({
   ogType = "website",
   noIndex = false,
 }: SEOHeadProps) => {
-  const baseUrl = "https://everyspaces.com";
+  const baseUrl = "https://looplic.media";
   const fullCanonical = canonical ? `${baseUrl}${canonical}` : undefined;
 
   return (

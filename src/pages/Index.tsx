@@ -7,17 +7,17 @@ import TestimonialSection from "@/components/TestimonialSection";
 import ContactForm from "@/components/ContactForm";
 import FooterSection from "@/components/FooterSection";
 import AnimatedSection from "@/components/AnimatedSection";
-import AreasWeServe from "@/components/AreasWeServe";
+
 import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="EverySpaces – Best Coworking & Office Space in Bangalore | Workspace Solutions"
-        description="Find affordable coworking spaces, private offices & managed workspaces in Bangalore & Hyderabad. EverySpaces offers expert workspace consulting, office space for rent & flexible desk solutions for startups & enterprises."
+        title="Looplic – AI Media Company | AI Video, Ad Films, UGC & Product Shoots"
+        description="Looplic is an AI media company building AI videos, ad films, UGC-style content, product & brand shoots, scriptwriting and storyboarding for modern brands."
         canonical="/"
-        keywords="coworking space Bangalore, office space for rent Bangalore, coworking space Hyderabad, managed office Hyderabad, shared office space, flexible workspace Bangalore, commercial office space, workspace solutions, coworking near me, office on rent Bangalore, HITEC City office, Koramangala coworking"
+        keywords="AI media company, AI video generation, ad film production, UGC content, product photography, brand shoots, AI scriptwriting, storyboarding, content production agency"
       />
       <Navbar />
       <AnimatedSection>
@@ -34,9 +34,6 @@ const Index = () => {
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
         <TestimonialSection />
-      </AnimatedSection>
-      <AnimatedSection delay={0.1}>
-        <AreasWeServe />
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
         <ContactForm />
