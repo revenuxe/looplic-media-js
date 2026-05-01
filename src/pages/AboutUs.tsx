@@ -66,13 +66,13 @@ const AboutUs = () => {
       <AnimatedSection>
         <section className="py-16 md:py-28 px-4 sm:px-6 lg:px-12 bg-primary text-primary-foreground">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">AI Media Company</p>
+            <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">AI Media Company · Est. 2025</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight mb-6">
               We're <span className="italic text-accent">Looplic</span> — AI-Powered
               <br className="hidden sm:block" /> Content for Modern Brands
             </h1>
             <p className="text-primary-foreground/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Looplic blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
+              Founded in 2025, Looplic blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
             </p>
           </div>
         </section>
