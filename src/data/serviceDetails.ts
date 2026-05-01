@@ -319,6 +319,38 @@ export const serviceSlugMap: Record<string, string> = {
   "Brand Shoots": "brand-shoots",
   "AI Scriptwriting & Storyboarding": "scripts-storyboards",
   "Scriptwriting & Storyboarding": "scripts-storyboards",
+  "Performance Creative & Ad Iteration": "performance-creative",
+  "Motion Graphics & 2D/3D Animation": "motion-graphics",
+  "Podcast & Long-Form Video Production": "podcast-video",
+  "AI Avatars & Synthetic Presenters": "ai-avatars",
+  "E-commerce Product Video Ads": "ecommerce-video",
+  "Social Media Content & Reels Production": "social-content",
 };
 
 export const serviceList = Object.values(serviceDetails);
+
+export interface ToolItem {
+  name: string;
+  category: string;
+  description: string;
+}
+
+export const toolsWeUse: ToolItem[] = [
+  { name: "Sora", category: "AI Video", description: "OpenAI's flagship text-to-video for cinematic ad cuts and brand films." },
+  { name: "Veo 3", category: "AI Video", description: "Google DeepMind's high-fidelity video model with native audio generation." },
+  { name: "Runway Gen-4", category: "AI Video", description: "Production-grade AI video, motion brush and director-style camera control." },
+  { name: "Kling AI", category: "AI Video", description: "Long-form, ultra-realistic AI video for product, lifestyle and human action shots." },
+  { name: "Seedance", category: "AI Video", description: "ByteDance's text-and-image-to-video model for fast, social-native AI cuts." },
+  { name: "Luma Dream Machine", category: "AI Video", description: "Cinematic camera moves, ray-traced realism for AI b-roll and product reveals." },
+  { name: "Pika 2.0", category: "AI Video", description: "Fast iteration, lip-sync and stylized AI video for social and ads." },
+  { name: "Midjourney", category: "AI Image", description: "Reference frames, style frames and key art generation." },
+  { name: "Flux & Ideogram", category: "AI Image", description: "Photo-real product imagery, typography-aware ad statics and key visuals." },
+  { name: "HeyGen & Synthesia", category: "AI Avatars", description: "Photoreal AI presenters and digital twins for sales, training and ads." },
+  { name: "ElevenLabs", category: "AI Voice", description: "Voice cloning and multilingual VO in 30+ languages." },
+  { name: "Suno & Udio", category: "AI Music", description: "Custom AI scoring, jingles and sound beds for brand films." },
+  { name: "Adobe Premiere & After Effects", category: "Post Production", description: "Industry-standard edit, motion graphics and finishing pipeline." },
+  { name: "DaVinci Resolve", category: "Color & Finishing", description: "Cinema-grade color grading, HDR delivery and broadcast mastering." },
+  { name: "Blender & Cinema 4D", category: "3D Animation", description: "3D product, character and abstract animation for premium brand work." },
+  { name: "ARRI, RED & Sony Cinema Cameras", category: "Cinematography", description: "Hollywood-grade cinema cameras for our on-set ad film and brand shoots." },
+];
+
