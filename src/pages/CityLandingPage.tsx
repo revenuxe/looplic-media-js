@@ -9,8 +9,8 @@ import ExpandableServicesSection, { getLocationServices } from "@/components/Exp
 import { cityContent } from "@/data/cityContent";
 import { areasByCity } from "@/data/areas";
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-workspace.png?format=webp";
-import testimonialBg from "@/assets/testimonial-bg.png?format=webp";
+import heroImg from "@/assets/hero-workspace.webp";
+import testimonialBg from "@/assets/testimonial-bg.webp";
 
 const cityGoals = (city: string) => [
   { icon: Target, title: `Find Your Ideal Office for Rent in ${city} — In Minutes, Not Weeks`, color: "text-lime" },
