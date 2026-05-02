@@ -3,12 +3,12 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { ArrowUpRight, CheckCircle2, X, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { serviceDetails, serviceSlugMap } from "@/data/serviceDetails";
-import serviceConsulting from "@/assets/service-consulting.png?format=webp";
-import serviceSearch from "@/assets/service-search.png?format=webp";
-import serviceInterior from "@/assets/service-interior.png?format=webp";
-import serviceResearch from "@/assets/service-research.png?format=webp";
-import serviceManagement from "@/assets/service-management.png?format=webp";
-import serviceStrategy from "@/assets/service-strategy.png?format=webp";
+import serviceConsulting from "@/assets/service-consulting.webp";
+import serviceSearch from "@/assets/service-search.webp";
+import serviceInterior from "@/assets/service-interior.webp";
+import serviceResearch from "@/assets/service-research.webp";
+import serviceManagement from "@/assets/service-management.webp";
+import serviceStrategy from "@/assets/service-strategy.webp";
 
 const variantClasses = {
   default: "bg-card border border-border shadow-md",

@@ -1,5 +1,5 @@
 import { Star } from "lucide-react";
-import testimonialBg from "@/assets/testimonial-bg.png?format=webp";
+import testimonialBg from "@/assets/testimonial-bg.webp";
 
 const TestimonialSection = () => {
   return (

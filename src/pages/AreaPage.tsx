@@ -8,8 +8,8 @@ import SEOHead from "@/components/SEOHead";
 import ExpandableServicesSection, { getLocationServices } from "@/components/ExpandableServicesSection";
 import { getAreaBySlug, areasByCity } from "@/data/areas";
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-workspace.png?format=webp";
-import testimonialBg from "@/assets/testimonial-bg.png?format=webp";
+import heroImg from "@/assets/hero-workspace.webp";
+import testimonialBg from "@/assets/testimonial-bg.webp";
 
 const areaGoals = (areaName: string) => [
   { icon: Target, title: `Find Your Ideal Office for Rent in ${areaName} — In Minutes, Not Weeks`, color: "text-lime" },
