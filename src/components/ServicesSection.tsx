@@ -4,12 +4,12 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { ArrowUpRight, CheckCircle2, X, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { serviceDetails, serviceSlugMap } from "@/data/serviceDetails";
-import imgAiVideo from "@/assets/svc-ai-video.jpg";
-import imgProduct from "@/assets/svc-product-shoot.jpg";
-import imgUgc from "@/assets/svc-ugc.jpg";
-import imgAdfilm from "@/assets/svc-adfilm.jpg";
-import imgBrand from "@/assets/svc-brand-shoot.jpg";
-import imgScript from "@/assets/svc-script.jpg";
+import imgAiVideo from "@/assets/svc-ai-video.webp";
+import imgProduct from "@/assets/svc-product-shoot.webp";
+import imgUgc from "@/assets/svc-ugc.webp";
+import imgAdfilm from "@/assets/svc-adfilm.webp";
+import imgBrand from "@/assets/svc-brand-shoot.webp";
+import imgScript from "@/assets/svc-script.webp";
 
 const services = [
   { image: imgAiVideo, title: "Cinematic AI Video Production", desc: "AI-generated cinematic ads, brand films & social cuts — broadcast-ready, in days not months.", variant: "default" as const },

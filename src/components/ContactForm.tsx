@@ -5,7 +5,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import { z } from "zod";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import heroImg from "@/assets/hero-adfilm.jpg";
+import heroImg from "@/assets/hero-adfilm.webp";
 
 const leadSchema = z.object({
   full_name: z.string().trim().min(1, "Name is required").max(200, "Name is too long"),

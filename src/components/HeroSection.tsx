@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImg from "@/assets/hero-adfilm.jpg";
+import heroImg from "@/assets/hero-adfilm.webp";
 
 
 const HeroSection = () => {
