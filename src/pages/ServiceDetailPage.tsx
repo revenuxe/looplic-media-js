@@ -3,10 +3,11 @@ import { ArrowUpRight, CheckCircle2, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/FooterSection";
+import ServicesSection from "@/components/ServicesSection";
 import ContactForm from "@/components/ContactForm";
 import AnimatedSection from "@/components/AnimatedSection";
 import SEOHead from "@/components/SEOHead";
-import { serviceDetails, serviceList } from "@/data/serviceDetails";
+import { serviceDetails } from "@/data/serviceDetails";
 import imgAiVideo from "@/assets/svc-ai-video.jpg";
 import imgProduct from "@/assets/svc-product-shoot.jpg";
 import imgUgc from "@/assets/svc-ugc.jpg";
@@ -44,7 +45,6 @@ const ServiceDetailPage = () => {
   if (!detail) return <Navigate to="/" replace />;
 
   const image = slugImage[detail.slug] || heroImg;
-  const related = serviceList.filter((s) => s.slug !== detail.slug).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background">
@@ -196,51 +196,9 @@ const ServiceDetailPage = () => {
         </section>
       </AnimatedSection>
 
-      {/* Related services - same card style as homepage */}
+      {/* Related services - same expandable section as homepage */}
       <AnimatedSection>
-        <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-12">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col sm:flex-row items-start justify-between mb-8 md:mb-12 gap-4">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif max-w-2xl">
-                <span className="font-bold">Explore</span> More AI-Powered Production Services
-              </h2>
-              <Link
-                to="/contact"
-                className="hidden md:flex w-12 h-12 rounded-full border-2 border-foreground items-center justify-center hover:bg-foreground hover:text-primary-foreground transition-colors shrink-0"
-              >
-                <ArrowUpRight size={20} />
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-              {related.map((s) => {
-                const variantClass =
-                  s.variant === "lime"
-                    ? "bg-lime text-foreground shadow-md"
-                    : s.variant === "orange"
-                    ? "bg-accent text-accent-foreground shadow-md"
-                    : "bg-card border border-border shadow-md";
-                return (
-                  <Link
-                    key={s.slug}
-                    to={`/services/${s.slug}`}
-                    className={`rounded-2xl p-5 sm:p-7 flex flex-col justify-between min-h-[260px] sm:min-h-[300px] group ${variantClass}`}
-                  >
-                    <div className="w-full h-32 sm:h-36 rounded-xl overflow-hidden mb-5 sm:mb-6">
-                      <img src={slugImage[s.slug]} alt={s.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold font-sans mb-2">{s.title}</h3>
-                      <p className="text-sm opacity-70 leading-relaxed mb-4">{s.shortDesc}</p>
-                      <span className="inline-flex items-center gap-1.5 text-sm font-medium">
-                        Learn more <ArrowUpRight size={16} />
-                      </span>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        <ServicesSection />
       </AnimatedSection>
 
       <ContactForm defaultProjectType={detail.title} />
