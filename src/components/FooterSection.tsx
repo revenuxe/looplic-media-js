@@ -1,5 +1,5 @@
 import { Linkedin, Instagram } from "lucide-react";
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 
 type FooterLink = { label?: string; href?: string; isRoute?: boolean };
 
@@ -93,9 +93,9 @@ const FooterSection = () => {
                 {links.map((link) => (
                   <li key={link.label}>
                     {link.isRoute ? (
-                      <Link to={link.href!} className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                      <AppLink to={link.href!} className="text-sm text-muted-foreground hover:text-accent transition-colors">
                         {link.label}
-                      </Link>
+                      </AppLink>
                     ) : (
                       <a href={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors">
                         {link.label}

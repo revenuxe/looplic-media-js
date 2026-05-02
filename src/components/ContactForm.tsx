@@ -1,10 +1,11 @@
+"use client";
+
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
-import { useNavigate, useSearchParams } from "react-router-dom";
 import { z } from "zod";
-import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { assetSrc } from "@/lib/assets";
 import heroImg from "@/assets/hero-adfilm.webp";
 
 const leadSchema = z.object({
@@ -31,8 +32,8 @@ interface ContactFormProps {
 }
 
 const ContactForm = ({ defaultProjectType }: ContactFormProps) => {
-  const [searchParams] = useSearchParams();
-  const initialType = defaultProjectType || searchParams.get("service") || "";
+  const searchParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+  const initialType = defaultProjectType || searchParams?.get("service") || "";
 
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -42,7 +43,6 @@ const ContactForm = ({ defaultProjectType }: ContactFormProps) => {
   const [message, setMessage] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const { toast } = useToast();
-  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,14 +64,14 @@ const ContactForm = ({ defaultProjectType }: ContactFormProps) => {
     }
 
     const v = result.data;
-    // Reuse existing leads table columns
+    const { supabase } = await import("@/integrations/supabase/client");
     const { error } = await supabase.from("leads").insert({
       full_name: v.full_name,
       email: v.email,
       phone: v.phone,
-      preferred_location: v.project_type,
-      nature_of_business: v.brand || null,
-      planned_timeline: v.message ? v.message.slice(0, 50) : null,
+      project_type: v.project_type,
+      brand: v.brand || null,
+      message: v.message || null,
     });
 
     setSubmitting(false);
@@ -81,7 +81,7 @@ const ContactForm = ({ defaultProjectType }: ContactFormProps) => {
       return;
     }
 
-    navigate("/thank-you");
+    window.location.assign("/thank-you");
   };
 
   const inputClass =
@@ -91,7 +91,7 @@ const ContactForm = ({ defaultProjectType }: ContactFormProps) => {
   return (
     <section id="contact-form" className="relative py-16 md:py-24 px-4 sm:px-6 lg:px-12 overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="" className="w-full h-full object-cover" />
+        <img src={assetSrc(heroImg)} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/85" />
       </div>
 

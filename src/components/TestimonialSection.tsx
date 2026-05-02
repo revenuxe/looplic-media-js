@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { assetSrc } from "@/lib/assets";
 import testimonialBg from "@/assets/testimonial-bg.webp";
 
 const TestimonialSection = () => {
@@ -13,7 +14,7 @@ const TestimonialSection = () => {
 
         <div className="relative rounded-none overflow-hidden min-h-[300px] sm:min-h-[400px]">
           <img
-            src={testimonialBg}
+            src={assetSrc(testimonialBg)}
             alt="Team collaboration"
             className="w-full h-full object-cover absolute inset-0"
           />

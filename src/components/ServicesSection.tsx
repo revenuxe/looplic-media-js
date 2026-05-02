@@ -1,6 +1,9 @@
+"use client";
+
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { assetSrc } from "@/lib/assets";
 import { ArrowUpRight, CheckCircle2, X, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { serviceDetails, serviceSlugMap } from "@/data/serviceDetails";
@@ -42,7 +45,7 @@ const ServiceCard = ({
     onClick={onToggle}
   >
     <div className="w-full h-32 sm:h-36 rounded-xl overflow-hidden mb-5 sm:mb-6">
-      <img src={service.image} alt={service.title} loading="lazy" className="w-full h-full object-cover" />
+      <img src={assetSrc(service.image)} alt={service.title} loading="lazy" className="w-full h-full object-cover" />
     </div>
     <div>
       <h3 className="text-lg sm:text-xl font-bold font-sans mb-2">{service.title}</h3>
@@ -85,7 +88,7 @@ const ExpandedPanel = ({
         <div className="flex items-start justify-between mb-6 md:mb-8">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-accent/30 shrink-0">
-              <img src={service.image} alt={service.title} className="w-full h-full object-cover" />
+              <img src={assetSrc(service.image)} alt={service.title} className="w-full h-full object-cover" />
             </div>
             <div>
               <span className="text-accent font-semibold text-xs uppercase tracking-wider">Service</span>
@@ -153,20 +156,20 @@ const ExpandedPanel = ({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 mt-8 pt-6 border-t border-border">
-          <Link
+          <AppLink
             to={`/services/${detail.slug}`}
             className="flex items-center justify-between bg-accent text-accent-foreground font-semibold text-sm py-3 pl-5 pr-3 rounded-full hover:opacity-90 transition-opacity sm:w-fit gap-4"
           >
             <span>View Full Service Page</span>
             <span className="w-8 h-8 rounded-full border-2 border-accent-foreground/30 flex items-center justify-center"><ArrowUpRight size={14} /></span>
-          </Link>
-          <Link
+          </AppLink>
+          <AppLink
             to="/contact"
             className="flex items-center justify-between bg-primary-foreground text-primary font-semibold text-sm py-3 pl-5 pr-3 rounded-full hover:opacity-90 transition-opacity sm:w-fit gap-4"
           >
             <span>Start Your Project</span>
             <span className="w-8 h-8 rounded-full border-2 border-primary/30 flex items-center justify-center"><ArrowUpRight size={14} /></span>
-          </Link>
+          </AppLink>
         </div>
       </div>
     </motion.div>
@@ -191,12 +194,12 @@ const ServicesSection = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif max-w-2xl">
             <span className="font-bold">AI-Powered</span> Video, Ad Film & Content Production Services
           </h2>
-          <Link
+          <AppLink
             to="/contact"
             className="hidden md:flex w-12 h-12 rounded-full border-2 border-foreground items-center justify-center hover:bg-foreground hover:text-primary-foreground transition-colors shrink-0"
           >
             <ArrowUpRight size={20} />
-          </Link>
+          </AppLink>
         </div>
 
         {isMobile ? (
@@ -237,7 +240,7 @@ const ServicesSection = () => {
 
         {/* Show All Services CTA */}
         <div className="mt-10 md:mt-14 flex justify-center">
-          <Link
+          <AppLink
             to="/services"
             className="group inline-flex items-center gap-3 bg-accent text-accent-foreground font-semibold text-sm sm:text-base py-3 sm:py-4 pl-6 sm:pl-8 pr-3 sm:pr-4 rounded-full hover:opacity-90 transition-opacity shadow-lg"
           >
@@ -245,7 +248,7 @@ const ServicesSection = () => {
             <span className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 border-accent-foreground/30 flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
               <ArrowUpRight size={16} />
             </span>
-          </Link>
+          </AppLink>
         </div>
       </div>
     </section>

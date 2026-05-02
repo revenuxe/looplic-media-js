@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
+import { assetSrc } from "@/lib/assets";
 import heroImg from "@/assets/hero-adfilm.webp";
 
 
@@ -35,7 +36,7 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 -mt-16 sm:-mt-20 relative z-20">
         <div className="rounded-lg sm:rounded-2xl overflow-hidden shadow-2xl">
           <img
-            src={heroImg}
+            src={assetSrc(heroImg)}
             alt="Behind the scenes of a cinematic ad film production shoot with professional cinema camera"
             width={1920}
             height={1080}
@@ -43,7 +44,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="mt-6 sm:mt-8">
-          <Link
+          <AppLink
             to="/contact"
             className="flex items-center justify-between bg-accent text-accent-foreground font-semibold text-base sm:text-lg py-3 sm:py-4 pl-6 sm:pl-8 pr-3 sm:pr-4 rounded-full hover:opacity-90 transition-opacity"
           >
@@ -51,7 +52,7 @@ const HeroSection = () => {
             <span className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-accent-foreground/30 flex items-center justify-center ml-4">
               <ArrowUpRight size={20} />
             </span>
-          </Link>
+          </AppLink>
         </div>
       </div>
     </section>
