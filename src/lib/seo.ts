@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ServiceDetail } from "@/data/serviceDetails";
 
-export const siteUrl = "https://looplic.media";
+export const siteUrl = "https://looplic.com";
 export const siteName = "Looplic";
 export const defaultOgImage = "/looplic-og.webp";
 
@@ -73,7 +73,7 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": `${siteUrl}/#organization`,
-  name: "Looplic Media",
+  name: "Looplic",
   alternateName: "Looplic",
   description:
     "AI media company and content production studio specializing in AI video, ad films, UGC, product photography, brand shoots, motion graphics and performance creative.",
@@ -81,7 +81,7 @@ export const organizationSchema = {
   logo: absoluteUrl("/favicon.ico"),
   image: absoluteUrl(defaultOgImage),
   telephone: "+919886285028",
-  email: "hello@looplic.media",
+  email: "hello@looplic.com",
   priceRange: "$$",
   areaServed: ["India", "Bangalore", "Mumbai", "Delhi", "Hyderabad", "Global remote"],
   address: {
@@ -90,10 +90,7 @@ export const organizationSchema = {
     addressRegion: "Karnataka",
     addressCountry: "IN",
   },
-  sameAs: [
-    "https://www.linkedin.com/company/looplic",
-    "https://www.instagram.com/looplic.media/",
-  ],
+  sameAs: ["https://www.linkedin.com/company/looplic"],
   knowsAbout: [
     "AI video production",
     "Ad film production",

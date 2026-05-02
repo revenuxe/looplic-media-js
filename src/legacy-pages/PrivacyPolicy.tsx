@@ -9,8 +9,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Privacy Policy | Looplic AI Media — How We Protect Your Data"
-        description="Read Looplic Media's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information."
+        title="Privacy Policy | Looplic AI Studio — How We Protect Your Data"
+        description="Read Looplic's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information."
         canonical="/privacy-policy"
         keywords="Looplic privacy policy, AI media data protection, video production privacy, brand data protection, GDPR, DPDP India"
       />
@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
           <div className="max-w-3xl mx-auto prose-sm sm:prose text-foreground">
             <h2 className="text-xl sm:text-2xl font-serif mb-4">1. Introduction</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Looplic Media ("Looplic," "we," "our," or "us"), founded in 2025, is an AI-powered media and content production studio. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal and brand information when you visit our website, submit an inquiry, or engage us for AI video, ad film, UGC, product shoot, brand shoot, motion graphics or any related production service. By using our services, you agree to this Policy.
+              Looplic ("Looplic," "we," "our," or "us"), founded in 2025, is an AI-powered media and content production studio. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal and brand information when you visit our website, submit an inquiry, or engage us for AI video, ad film, UGC, product shoot, brand shoot, motion graphics or any related production service. By using our services, you agree to this Policy.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">2. Information We Collect</h2>
@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
               <li><strong>Object</strong> to specific uses of your data</li>
             </ul>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Email <strong>hello@looplic.media</strong> to exercise any right.
+              Email <strong>hello@looplic.com</strong> to exercise any right.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">11. Children's Privacy</h2>
@@ -128,9 +128,9 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">14. Contact</h2>
             <div className="bg-secondary rounded-xl p-5 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Looplic Media</strong></p>
+              <p><strong className="text-foreground">Looplic</strong></p>
               <p>Bangalore, India</p>
-              <p>Email: hello@looplic.media</p>
+              <p>Email: hello@looplic.com</p>
               <p>Phone: +91 98862 85028</p>
             </div>
           </div>

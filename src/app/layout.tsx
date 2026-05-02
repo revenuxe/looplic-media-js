@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   description:
     "Looplic is an AI media and content production studio for AI videos, ad films, UGC, product photography, brand shoots, motion graphics and performance creative.",
   authors: [{ name: "Looplic" }],
-  creator: "Looplic Media",
-  publisher: "Looplic Media",
+  creator: "Looplic",
+  publisher: "Looplic",
   applicationName: "Looplic",
   icons: {
     icon: "/favicon.ico",

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { serviceDetails } from "@/data/serviceDetails";
 
-const baseUrl = "https://looplic.media";
+const baseUrl = "https://looplic.com";
 const now = new Date();
 
 const staticRoutes = [

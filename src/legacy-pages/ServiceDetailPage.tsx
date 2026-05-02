@@ -75,7 +75,7 @@ const ServiceDetailPage = ({ slug }: ServiceDetailPageProps) => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={`${detail.title} | Looplic AI Media`}
+        title={`${detail.title} | Looplic AI Studio`}
         description={detail.shortDesc}
         canonical={`/services/${detail.slug}`}
         keywords={detail.keywords}

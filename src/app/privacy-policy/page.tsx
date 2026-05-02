@@ -6,7 +6,7 @@ import { breadcrumbSchema, createSeoMetadata, webPageSchema } from "@/lib/seo";
 export const metadata: Metadata = createSeoMetadata({
   title: "Privacy Policy - How Looplic Protects Your Data",
   description:
-    "Read Looplic Media's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information.",
+    "Read Looplic's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information.",
   path: "/privacy-policy",
   keywords: [
     "Looplic privacy policy",
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
           webPageSchema({
             name: "Privacy Policy",
             description:
-              "Privacy policy for Looplic Media's AI video and content production services.",
+              "Privacy policy for Looplic's AI video and content production services.",
             path: "/privacy-policy",
           }),
           breadcrumbSchema([

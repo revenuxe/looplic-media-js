@@ -31,7 +31,7 @@ export default function HomePage() {
       <JsonLd
         data={[
           webPageSchema({
-            name: "Looplic AI Media Studio",
+            name: "Looplic AI Studio",
             description:
               "AI video production, ad films, UGC, product photography, brand shoots and performance creative for modern brands.",
             path: "/",

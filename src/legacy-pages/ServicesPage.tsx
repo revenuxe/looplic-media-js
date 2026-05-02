@@ -48,7 +48,7 @@ const ServicesPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="AI Video, Ad Film & Content Production Services | Looplic Media"
+        title="AI Video, Ad Film & Content Production Services | Looplic"
         description="Explore Looplic's full suite of AI video, ad film, UGC, product, brand, motion graphics, podcast and performance creative services for D2C, SaaS and modern brands."
         canonical="/services"
         keywords="AI video production services, ad film production company, UGC agency India, performance creative agency, motion graphics studio, AI avatar agency, ecommerce video production, podcast production Bangalore, social media content agency"

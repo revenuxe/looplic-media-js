@@ -1,6 +1,6 @@
-# Looplic Media
+# Looplic
 
-Next.js App Router site for Looplic Media.
+Next.js App Router site for Looplic.
 
 ## Commands
 

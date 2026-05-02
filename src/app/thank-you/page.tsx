@@ -4,7 +4,7 @@ import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createSeoMetadata({
   title: "Thank You | Looplic",
-  description: "Thank you for contacting Looplic Media.",
+  description: "Thank you for contacting Looplic.",
   path: "/thank-you",
   noIndex: true,
 });

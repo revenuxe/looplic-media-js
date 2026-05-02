@@ -6,7 +6,7 @@ import { breadcrumbSchema, createSeoMetadata, webPageSchema } from "@/lib/seo";
 export const metadata: Metadata = createSeoMetadata({
   title: "Terms & Conditions - Looplic Service Agreement",
   description:
-    "Terms & conditions for engaging Looplic Media for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions.",
+    "Terms & conditions for engaging Looplic for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions.",
   path: "/terms-and-conditions",
   keywords: [
     "Looplic terms and conditions",
@@ -26,7 +26,7 @@ export default function TermsConditionsPage() {
           webPageSchema({
             name: "Terms and Conditions",
             description:
-              "Service agreement terms for Looplic Media's AI video, ad film, UGC and content production services.",
+              "Service agreement terms for Looplic's AI video, ad film, UGC and content production services.",
             path: "/terms-and-conditions",
           }),
           breadcrumbSchema([

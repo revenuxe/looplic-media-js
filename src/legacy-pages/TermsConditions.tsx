@@ -9,8 +9,8 @@ const TermsConditions = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Terms & Conditions | Looplic AI Media — Service Agreement"
-        description="Terms & conditions for engaging Looplic Media for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions."
+        title="Terms & Conditions | Looplic AI Studio — Service Agreement"
+        description="Terms & conditions for engaging Looplic for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions."
         canonical="/terms-and-conditions"
         keywords="Looplic terms and conditions, AI video production agreement, ad film service agreement, content production terms, IP ownership video, payment terms studio India"
       />
@@ -31,7 +31,7 @@ const TermsConditions = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              By accessing the Looplic Media website (looplic.media) or engaging us for any service, you agree to be bound by these Terms & Conditions ("Terms"). If you do not agree, please do not use our services. Looplic Media is an AI media and content production studio, founded in 2025 and headquartered in Bangalore, India.
+              By accessing the Looplic website (looplic.com) or engaging us for any service, you agree to be bound by these Terms & Conditions ("Terms"). If you do not agree, please do not use our services. Looplic is an AI media and content production studio, founded in 2025 and headquartered in Bangalore, India.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">2. Our Services</h2>
@@ -83,7 +83,7 @@ const TermsConditions = () => {
               <li>UPI (Google Pay, PhonePe, Paytm, etc.)</li>
               <li>Online payment links (credit/debit card, net banking)</li>
               <li>International wire transfer (USD, EUR, GBP, AED) for overseas clients</li>
-              <li>Cheque / demand draft in favour of Looplic Media</li>
+              <li>Cheque / demand draft in favour of Looplic</li>
             </ul>
             <h3 className="text-lg font-serif mb-2">6.4 Late Payments</h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
@@ -155,9 +155,9 @@ const TermsConditions = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">17. Contact</h2>
             <div className="bg-secondary rounded-xl p-5 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Looplic Media</strong></p>
+              <p><strong className="text-foreground">Looplic</strong></p>
               <p>Bangalore, India</p>
-              <p>Email: hello@looplic.media</p>
+              <p>Email: hello@looplic.com</p>
               <p>Phone: +91 98862 85028</p>
             </div>
           </div>

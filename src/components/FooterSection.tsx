@@ -1,4 +1,4 @@
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import AppLink from "@/components/AppLink";
 
 type FooterLink = { label?: string; href?: string; isRoute?: boolean };
@@ -53,7 +53,7 @@ const FooterSection = () => {
             <div>
               <h4 className="font-bold text-sm mb-1">Studio</h4>
               <p className="text-sm text-muted-foreground">
-                Looplic Media<br />
+                Looplic<br />
                 Bangalore, India
               </p>
             </div>
@@ -63,7 +63,7 @@ const FooterSection = () => {
             </div>
             <div>
               <h4 className="font-bold text-sm mb-1">Email</h4>
-              <p className="text-sm text-muted-foreground">hello@looplic.media</p>
+              <p className="text-sm text-muted-foreground">hello@looplic.com</p>
             </div>
           </div>
         </div>
@@ -80,9 +80,6 @@ const FooterSection = () => {
             <div className="flex gap-3">
               <a href="https://www.linkedin.com/company/looplic" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-foreground flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors">
                 <Linkedin size={16} />
-              </a>
-              <a href="https://www.instagram.com/looplic.media/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-foreground flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors">
-                <Instagram size={16} />
               </a>
             </div>
           </div>
@@ -111,7 +108,7 @@ const FooterSection = () => {
 
       {/* Copyright */}
       <div className="bg-primary py-4 px-4 sm:px-6 text-center border-t border-border">
-        <p className="text-xs sm:text-sm text-primary-foreground">© 2026 Looplic Media. All Rights Reserved.</p>
+        <p className="text-xs sm:text-sm text-primary-foreground">Copyright 2026 Looplic. All Rights Reserved.</p>
       </div>
     </footer>
   );
