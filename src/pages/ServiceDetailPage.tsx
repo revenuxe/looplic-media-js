@@ -7,7 +7,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ContactForm from "@/components/ContactForm";
 import AnimatedSection from "@/components/AnimatedSection";
 import SEOHead from "@/components/SEOHead";
-import { serviceDetails, serviceList } from "@/data/serviceDetails";
+import { serviceDetails } from "@/data/serviceDetails";
 import imgAiVideo from "@/assets/svc-ai-video.jpg";
 import imgProduct from "@/assets/svc-product-shoot.jpg";
 import imgUgc from "@/assets/svc-ugc.jpg";
@@ -45,7 +45,6 @@ const ServiceDetailPage = () => {
   if (!detail) return <Navigate to="/" replace />;
 
   const image = slugImage[detail.slug] || heroImg;
-  const related = serviceList.filter((s) => s.slug !== detail.slug).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background">
