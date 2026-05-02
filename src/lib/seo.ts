@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { ServiceDetail } from "@/data/serviceDetails";
 
-export const siteUrl = "https://looplic.com";
+export const siteUrl = "https://www.looplic.com";
 export const siteName = "Looplic";
 export const defaultOgImage = "/looplic-og.webp";
 

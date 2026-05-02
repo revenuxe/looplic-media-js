@@ -2,7 +2,7 @@ const stats = [
   { number: "500+", label: "Pieces of Content Delivered" },
   { number: "10x", label: "Faster Production with AI" },
   { number: "60%", label: "Lower Cost vs Traditional" },
-  { number: "< 48 hrs", label: "Avg. Turnaround Time" },
+  { number: "< 29 min", label: "Avg. Turnaround Time" },
 ];
 
 const StatsSection = () => {

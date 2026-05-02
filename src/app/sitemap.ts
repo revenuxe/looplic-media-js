@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { serviceDetails } from "@/data/serviceDetails";
+import { siteUrl } from "@/lib/seo";
 
-const baseUrl = "https://looplic.com";
 const now = new Date();
 
 const staticRoutes = [
@@ -15,7 +15,7 @@ const staticRoutes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceRoutes = Object.keys(serviceDetails).map((slug) => ({
-    url: `${baseUrl}/services/${slug}`,
+    url: `${siteUrl}/services/${slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes.map((route) => ({
-      url: `${baseUrl}${route.path}`,
+      url: `${siteUrl}${route.path}`,
       lastModified: now,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
