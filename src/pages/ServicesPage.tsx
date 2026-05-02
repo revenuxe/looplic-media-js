@@ -6,19 +6,19 @@ import ContactForm from "@/components/ContactForm";
 import AnimatedSection from "@/components/AnimatedSection";
 import SEOHead from "@/components/SEOHead";
 import { serviceList, toolsWeUse } from "@/data/serviceDetails";
-import imgAiVideo from "@/assets/svc-ai-video.jpg";
-import imgProduct from "@/assets/svc-product-shoot.jpg";
-import imgUgc from "@/assets/svc-ugc.jpg";
-import imgAdfilm from "@/assets/svc-adfilm.jpg";
-import imgBrand from "@/assets/svc-brand-shoot.jpg";
-import imgScript from "@/assets/svc-script.jpg";
-import imgPerformance from "@/assets/svc-performance.jpg";
-import imgMotion from "@/assets/svc-motion.jpg";
-import imgPodcast from "@/assets/svc-podcast.jpg";
-import imgAvatar from "@/assets/svc-avatar.jpg";
-import imgEcom from "@/assets/svc-ecom-video.jpg";
-import imgSocial from "@/assets/svc-social.jpg";
-import heroImg from "@/assets/hero-adfilm.jpg";
+import imgAiVideo from "@/assets/svc-ai-video.webp";
+import imgProduct from "@/assets/svc-product-shoot.webp";
+import imgUgc from "@/assets/svc-ugc.webp";
+import imgAdfilm from "@/assets/svc-adfilm.webp";
+import imgBrand from "@/assets/svc-brand-shoot.webp";
+import imgScript from "@/assets/svc-script.webp";
+import imgPerformance from "@/assets/svc-performance.webp";
+import imgMotion from "@/assets/svc-motion.webp";
+import imgPodcast from "@/assets/svc-podcast.webp";
+import imgAvatar from "@/assets/svc-avatar.webp";
+import imgEcom from "@/assets/svc-ecom-video.webp";
+import imgSocial from "@/assets/svc-social.webp";
+import heroImg from "@/assets/hero-adfilm.webp";
 
 const slugImage: Record<string, string> = {
   "ai-video-production": imgAiVideo,
