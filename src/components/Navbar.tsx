@@ -9,6 +9,7 @@ import logo from "@/assets/looplic-logo.webp";
 const navLinks = [
   { label: "Home", href: "/", isRoute: true },
   { label: "Services", href: "/services", isRoute: true },
+  { label: "Blog", href: "/blog", isRoute: true },
   { label: "About Us", href: "/about", isRoute: true },
   { label: "Contact Us", href: "/contact", isRoute: true },
 ];

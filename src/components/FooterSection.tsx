@@ -7,6 +7,7 @@ const footerLinks: Record<string, FooterLink[]> = {
   "Quick Links": [
     { label: "Home", href: "/", isRoute: true },
     { label: "All Services", href: "/services", isRoute: true },
+    { label: "Blog", href: "/blog", isRoute: true },
     { label: "About Us", href: "/about", isRoute: true },
     { label: "Contact Us", href: "/contact", isRoute: true },
   ],
@@ -27,6 +28,7 @@ const footerLinks: Record<string, FooterLink[]> = {
     { label: "AI Scripts & Storyboards", href: "/services/scripts-storyboards", isRoute: true },
   ],
   Legal: [
+    { label: "Revenuxe", href: "https://revenuxe.com" },
     { label: "Privacy Policy", href: "/privacy-policy", isRoute: true },
     { label: "Terms & Conditions", href: "/terms-and-conditions", isRoute: true },
   ],

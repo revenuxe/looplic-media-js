@@ -3,7 +3,7 @@ import FooterSection from "@/components/FooterSection";
 import AnimatedSection from "@/components/AnimatedSection";
 import SeoAnswerSummary from "@/components/SeoAnswerSummary";
 import SEOHead from "@/components/SEOHead";
-import { Quote, Sparkles, Film, Camera, Wand2, Heart, Rocket } from "lucide-react";
+import { ArrowUpRight, Building2, Quote, Sparkles, Film, Camera, Wand2, Heart, Rocket } from "lucide-react";
 
 const quotes = [
   {
@@ -135,6 +135,40 @@ const AboutUs = () => {
                       To become the AI-native media partner brands trust to ship their next 1,000 pieces of content.
                     </p>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
+
+      {/* Platform */}
+      <AnimatedSection delay={0.1}>
+        <section className="py-14 md:py-20 px-4 sm:px-6 lg:px-12 bg-secondary">
+          <div className="max-w-5xl mx-auto grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-center">
+            <div>
+              <p className="text-accent font-semibold text-xs tracking-widest uppercase mb-3">
+                Platform
+              </p>
+              <h2 className="text-2xl sm:text-3xl font-serif leading-tight">
+                Looplic, a Platform by <span className="italic text-accent">Revenuxe</span>
+              </h2>
+            </div>
+            <div className="border border-border bg-card p-6 sm:p-8">
+              <div className="flex items-start gap-4">
+                <Building2 size={28} className="text-accent shrink-0 mt-1" />
+                <div>
+                  <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
+                    Looplic is built as a focused media and content platform by Revenuxe, bringing together AI-native production, brand storytelling and performance-led creative systems for modern businesses.
+                  </p>
+                  <a
+                    href="https://revenuxe.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center gap-2 bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground hover:opacity-90 transition-opacity"
+                  >
+                    Visit Revenuxe <ArrowUpRight size={16} />
+                  </a>
                 </div>
               </div>
             </div>
