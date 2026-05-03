@@ -28,7 +28,7 @@ export type BlogBlock =
   | { _type: "list"; items: string[] }
   | { _type: "quote"; text: string; byline?: string };
 
-const sanityProjectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+const sanityProjectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "zujxe2ee";
 const sanityDataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
 const sanityApiVersion = process.env.SANITY_API_VERSION || "2025-01-01";
 const sanityReadToken = process.env.SANITY_API_READ_TOKEN;
