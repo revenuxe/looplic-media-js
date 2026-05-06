@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import AppLink from "@/components/AppLink";
 import { assetSrc } from "@/lib/assets";
-import logo from "@/assets/media-x-by-revenuxe-logo.webp";
+import logo from "@/assets/media-x-logo.webp";
 
 const navLinks = [
   { label: "Home", href: "/", isRoute: true },
@@ -18,10 +18,10 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="w-full bg-primary py-4 px-6 lg:px-12 relative z-50">
+    <header className="w-full bg-primary py-4 pl-3 pr-6 lg:pl-4 lg:pr-12 relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <AppLink to="/" className="flex items-center gap-3">
-          <img src={assetSrc(logo)} alt="media.x by revenuxe logo" className="h-10 w-auto" />
+        <AppLink to="/" className="flex items-center gap-2">
+          <img src={assetSrc(logo)} alt="media.x logo" className="h-10 w-auto" />
         </AppLink>
 
         <nav className="hidden lg:flex items-center bg-primary-foreground/10 backdrop-blur-sm rounded-full px-2 py-1 border border-primary-foreground/20">
