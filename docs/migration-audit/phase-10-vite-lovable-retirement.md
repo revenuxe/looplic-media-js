@@ -25,7 +25,7 @@ Phase 10 removes the retired Vite/Lovable stack and leaves the project as a Next
 - `bun.lockb`
 - `dist/`
 
-The old Lovable README was replaced with a small Looplic/Next README.
+The old Lovable README was replaced with a small media.x by revenuxe/Next README.
 
 ## Dependency Cleanup
 

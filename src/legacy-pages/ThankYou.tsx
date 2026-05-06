@@ -57,7 +57,7 @@ const ThankYou = () => {
               "The best creative work starts with a sharp brief and a team that knows how to make it move."
             </blockquote>
             <p className="text-primary-foreground/50 text-sm mt-4 font-medium tracking-wide uppercase">
-              - Looplic
+              - media.x by revenuxe
             </p>
           </motion.div>
 

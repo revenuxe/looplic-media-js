@@ -12,7 +12,7 @@ import { serviceList } from "@/data/serviceDetails";
 export const metadata: Metadata = createSeoMetadata({
   title: "AI Video, Ad Film, UGC & Content Production Services",
   description:
-    "Explore Looplic's full suite of AI video, ad film, UGC, product, brand, motion graphics, podcast and performance creative services for D2C, SaaS and modern brands.",
+    "Explore media.x by revenuxe's full suite of AI video, ad film, UGC, product, brand, motion graphics, podcast and performance creative services for D2C, SaaS and modern brands.",
   path: "/services",
   keywords: [
     "AI video production services",
@@ -34,7 +34,7 @@ export default function ServicesRoutePage() {
         data={[
           webPageSchema({
             type: "CollectionPage",
-            name: "Looplic Services",
+            name: "media.x by revenuxe Services",
             description:
               "AI video, ad films, UGC, product photography, brand shoots, motion graphics, podcasts, AI avatars and performance creative services.",
             path: "/services",

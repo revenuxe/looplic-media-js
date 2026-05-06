@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AdminLeads from "@/legacy-pages/AdminLeads";
 
 export const metadata: Metadata = {
-  title: "Leads | Looplic Admin",
+  title: "Leads",
   description: "Admin leads.",
   robots: {
     index: false,

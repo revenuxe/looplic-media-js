@@ -2,7 +2,7 @@
 
 Date: 2026-05-02
 
-Phase 9 removes the remaining EverySpaces/workspace-facing content from the active website and keeps Looplic as the only public brand surface.
+Phase 9 removes the remaining EverySpaces/workspace-facing content from the active website and keeps media.x by revenuxe as the only public brand surface.
 
 ## Removed Public Route Family
 
@@ -23,8 +23,8 @@ The associated workspace/location data and UI were also removed:
 
 ## Brand Text Cleanup
 
-- Updated admin route metadata from EverySpaces wording to Looplic wording.
-- Updated legacy admin `SEOHead` titles/descriptions to Looplic wording.
+- Updated admin route metadata from EverySpaces wording to media.x by revenuxe wording.
+- Updated legacy admin `SEOHead` titles/descriptions to media.x by revenuxe wording.
 - Rewrote the thank-you page copy so it no longer references workspace options or Every Space.
 - Updated admin editor placeholder text from workspace/coworking examples to project/content examples.
 - Removed office-space and areas routes from `src/app/sitemap.ts`.
@@ -38,7 +38,7 @@ The associated workspace/location data and UI were also removed:
 | `npm run build` | Passes | Next route table no longer includes areas or office-space routes. |
 | `npm run build:vite` | Passes | Legacy Vite fallback still builds after route removal. Existing CSS, chunk size, and Supabase import warnings remain. |
 | `npm test` | Passes | 1 Vitest file, 1 test passed. |
-| Next dev HTTP check | Passes | `/areas-we-serve`, `/office-space/bangalore`, and `/office-space/bangalore/koramangala` returned HTTP 404. `/sitemap.xml` contains Looplic URLs and no office-space or areas URLs. |
+| Next dev HTTP check | Passes | `/areas-we-serve`, `/office-space/bangalore`, and `/office-space/bangalore/koramangala` returned HTTP 404. `/sitemap.xml` contains media.x by revenuxe URLs and no office-space or areas URLs. |
 
 ## Carry Forward
 

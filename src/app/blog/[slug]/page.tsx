@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: BlogDetailProps): Promise<Met
   if (!post) {
     return createSeoMetadata({
       title: "Blog Post Not Found",
-      description: "This Looplic blog post could not be found.",
+      description: "This media.x by revenuxe blog post could not be found.",
       path: `/blog/${slug}`,
       noIndex: true,
     });
@@ -126,7 +126,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
     description: post.seoDescription || post.excerpt,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
-    image: post.coverImage ? [post.coverImage] : [absoluteUrl("/looplic-og.webp")],
+    image: post.coverImage ? [post.coverImage] : [absoluteUrl("/media-x-by-revenuxe-og.webp")],
     author: {
       "@type": "Person",
       name: post.author?.name || siteName,
@@ -176,7 +176,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
               {post.excerpt}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-primary-foreground/70">
-              <span>{post.author?.name || "Looplic Team"}</span>
+              <span>{post.author?.name || "media.x by revenuxe Team"}</span>
               {post.author?.role && (
                 <>
                   <span className="h-1 w-1 rounded-full bg-accent" />

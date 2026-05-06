@@ -3,8 +3,8 @@ import ThankYou from "@/legacy-pages/ThankYou";
 import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createSeoMetadata({
-  title: "Thank You | Looplic",
-  description: "Thank you for contacting Looplic.",
+  title: "Thank You",
+  description: "Thank you for contacting media.x by revenuxe.",
   path: "/thank-you",
   noIndex: true,
 });

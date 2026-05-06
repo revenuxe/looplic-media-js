@@ -9,7 +9,7 @@ Phase 13 strengthens on-page SEO, onsite crawl signals, structured data and AI-a
 - Added global `ProfessionalService` and `WebSite` schema.
 - Added per-page `WebPage`, `AboutPage`, `ContactPage`, `CollectionPage`, `BreadcrumbList`, `ItemList`, `Service` and `FAQPage` schema where appropriate.
 - Added page-specific titles, descriptions, keywords, canonical URLs, OG images and Twitter images.
-- Added a public `looplic-og.webp` image for share previews.
+- Added a public `media-x-by-revenuxe-og.webp` image for share previews.
 - Added visible summary sections on home, about, services, service detail and contact pages for clearer human and AI extraction.
 - Kept admin and thank-you routes noindexed.
 

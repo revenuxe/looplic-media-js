@@ -4,12 +4,12 @@ import PrivacyPolicy from "@/legacy-pages/PrivacyPolicy";
 import { breadcrumbSchema, createSeoMetadata, webPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = createSeoMetadata({
-  title: "Privacy Policy - How Looplic Protects Your Data",
+  title: "Privacy Policy - How We Protect Your Data",
   description:
-    "Read Looplic's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information.",
+    "Read media.x by revenuxe's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information.",
   path: "/privacy-policy",
   keywords: [
-    "Looplic privacy policy",
+    "media.x by revenuxe privacy policy",
     "AI media data protection",
     "video production privacy",
     "brand data protection",
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
           webPageSchema({
             name: "Privacy Policy",
             description:
-              "Privacy policy for Looplic's AI video and content production services.",
+              "Privacy policy for media.x by revenuxe's AI video and content production services.",
             path: "/privacy-policy",
           }),
           breadcrumbSchema([

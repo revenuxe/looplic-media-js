@@ -9,10 +9,10 @@ const TermsConditions = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Terms & Conditions | Looplic AI Studio — Service Agreement"
-        description="Terms & conditions for engaging Looplic for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions."
+        title="Terms & Conditions | media.x by revenuxe AI Studio — Service Agreement"
+        description="Terms & conditions for engaging media.x by revenuxe for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions."
         canonical="/terms-and-conditions"
-        keywords="Looplic terms and conditions, AI video production agreement, ad film service agreement, content production terms, IP ownership video, payment terms studio India"
+        keywords="media.x by revenuxe terms and conditions, AI video production agreement, ad film service agreement, content production terms, IP ownership video, payment terms studio India"
       />
       <Navbar />
       <AnimatedSection>
@@ -31,11 +31,11 @@ const TermsConditions = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              By accessing the Looplic website (looplic.com) or engaging us for any service, you agree to be bound by these Terms & Conditions ("Terms"). If you do not agree, please do not use our services. Looplic is an AI media and content production studio, founded in 2025 and headquartered in Bangalore, India.
+              By accessing the media.x by revenuxe website (media.revenuxe.com) or engaging us for any service, you agree to be bound by these Terms & Conditions ("Terms"). If you do not agree, please do not use our services. media.x by revenuxe is an AI media and content production studio, founded in 2025 and headquartered in Bangalore, India.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">2. Our Services</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed mb-2">Looplic provides creative production services including:</p>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-2">media.x by revenuxe provides creative production services including:</p>
             <ul className="list-disc pl-5 text-muted-foreground text-sm leading-relaxed mb-6 space-y-1">
               <li>Cinematic AI video production using Sora, Veo, Runway, Kling, Luma, Pika, Seedance and other generative models</li>
               <li>Ad film production, TVCs and brand films</li>
@@ -83,7 +83,7 @@ const TermsConditions = () => {
               <li>UPI (Google Pay, PhonePe, Paytm, etc.)</li>
               <li>Online payment links (credit/debit card, net banking)</li>
               <li>International wire transfer (USD, EUR, GBP, AED) for overseas clients</li>
-              <li>Cheque / demand draft in favour of Looplic</li>
+              <li>Cheque / demand draft in favour of media.x by revenuxe</li>
             </ul>
             <h3 className="text-lg font-serif mb-2">6.4 Late Payments</h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
@@ -104,18 +104,18 @@ const TermsConditions = () => {
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               On full payment, all final deliverables produced for you transfer to your ownership for the agreed usage rights (typically global, paid-media, in perpetuity, unless otherwise scoped).
             </p>
-            <h3 className="text-lg font-serif mb-2">8.3 Looplic IP</h3>
+            <h3 className="text-lg font-serif mb-2">8.3 media.x by revenuxe IP</h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-              Our internal templates, prompt libraries, AI workflows, source project files (.aep, .prproj, .blend) and unused/raw outputs remain Looplic property unless explicitly purchased.
+              Our internal templates, prompt libraries, AI workflows, source project files (.aep, .prproj, .blend) and unused/raw outputs remain media.x by revenuxe property unless explicitly purchased.
             </p>
             <h3 className="text-lg font-serif mb-2">8.4 Portfolio Rights</h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Unless restricted by NDA, Looplic reserves the right to display delivered work in our portfolio, case studies, social media and award submissions.
+              Unless restricted by NDA, media.x by revenuxe reserves the right to display delivered work in our portfolio, case studies, social media and award submissions.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">9. Talent, Music & Third-Party Licenses</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Stock footage, music, fonts, talent appearances and AI vendor outputs may carry usage restrictions defined by their original licensors. Looplic will procure licenses appropriate to the agreed scope. Expanded usage (TV, OOH, broadcast, multi-year) may incur additional licensing fees.
+              Stock footage, music, fonts, talent appearances and AI vendor outputs may carry usage restrictions defined by their original licensors. media.x by revenuxe will procure licenses appropriate to the agreed scope. Expanded usage (TV, OOH, broadcast, multi-year) may incur additional licensing fees.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">10. Cancellation & Refunds</h2>
@@ -130,12 +130,12 @@ const TermsConditions = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">12. Limitation of Liability</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Looplic's total liability for any claim shall not exceed the fees paid for the specific deliverable giving rise to the claim. We are not liable for indirect, incidental, consequential or business-interruption damages, including loss of revenue or campaign performance.
+              media.x by revenuxe's total liability for any claim shall not exceed the fees paid for the specific deliverable giving rise to the claim. We are not liable for indirect, incidental, consequential or business-interruption damages, including loss of revenue or campaign performance.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">13. Indemnification</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              You agree to indemnify Looplic against claims arising from inaccurate briefs, unlicensed assets you provided, or misuse of delivered content beyond the agreed usage rights.
+              You agree to indemnify media.x by revenuxe against claims arising from inaccurate briefs, unlicensed assets you provided, or misuse of delivered content beyond the agreed usage rights.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">14. Force Majeure</h2>
@@ -155,9 +155,9 @@ const TermsConditions = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">17. Contact</h2>
             <div className="bg-secondary rounded-xl p-5 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Looplic</strong></p>
+              <p><strong className="text-foreground">media.x by revenuxe</strong></p>
               <p>Bangalore, India</p>
-              <p>Email: hello@looplic.com</p>
+              <p>Email: hello@media.revenuxe.com</p>
               <p>Phone: +91 98862 85028</p>
             </div>
           </div>

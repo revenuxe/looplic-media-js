@@ -2,7 +2,7 @@
 
 Date: 2026-05-02
 
-Project: Looplic Media Vite React SPA
+Project: media.x by revenuxe Media Vite React SPA
 
 Goal: freeze the current site behavior, SEO surface, route map, and known risks before migrating to Next.js SSR/SSG. The Next.js migration must preserve the current design and visible content unless a later phase explicitly fixes brand/domain inconsistencies.
 
@@ -68,16 +68,16 @@ Property listing pages are fetched from Supabase in the browser today and should
 
 ## Current SEO Baseline
 
-The root `index.html` contains Looplic metadata:
+The root `index.html` contains media.x by revenuxe metadata:
 
-- Title: `Looplic - AI Media Company | AI Video, Ad Films, UGC & Brand Shoots`
-- Canonical: `https://looplic.media/`
-- Organization schema URL: `https://looplic.media`
-- Email: `hello@looplic.media`
+- Title: `media.x by revenuxe - AI Media Company | AI Video, Ad Films, UGC & Brand Shoots`
+- Canonical: `https://media-x-by-revenuxe.media/`
+- Organization schema URL: `https://media-x-by-revenuxe.media`
+- Email: `hello@media-x-by-revenuxe.media`
 
 Page metadata is currently applied client-side through `SEOHead`. During migration, each page should move to Next.js `metadata` or `generateMetadata`.
 
-Public SEO pages with Looplic metadata:
+Public SEO pages with media.x by revenuxe metadata:
 
 - `/`
 - `/about`
@@ -100,16 +100,16 @@ Pages with EverySpaces/workspace metadata still present:
 
 ## Critical Brand/Domain Risk
 
-The project is mixed between Looplic and EverySpaces.
+The project is mixed between media.x by revenuxe and EverySpaces.
 
-Looplic references:
+media.x by revenuxe references:
 
 - `index.html`
 - `src/components/Navbar.tsx`
 - `src/components/FooterSection.tsx`
 - `src/components/HeroSection.tsx`
 - primary service pages
-- `SEOHead` base URL: `https://looplic.media`
+- `SEOHead` base URL: `https://media-x-by-revenuxe.media`
 
 EverySpaces references:
 
@@ -124,7 +124,7 @@ EverySpaces references:
 - `src/pages/AreaPage.tsx`
 - admin page titles
 
-Before launch, decide whether location/listing pages belong on this Looplic site. If they do, content and schema need to be rebranded. If they do not, those routes should be removed or noindexed before migration.
+Before launch, decide whether location/listing pages belong on this media.x by revenuxe site. If they do, content and schema need to be rebranded. If they do not, those routes should be removed or noindexed before migration.
 
 ## Robots And Sitemap Baseline
 
@@ -143,7 +143,7 @@ Before launch, decide whether location/listing pages belong on this Looplic site
 - `/privacy-policy`
 - `/terms-and-conditions`
 
-All sitemap URLs currently use `https://everyspaces.com`, which conflicts with the Looplic domain used by metadata.
+All sitemap URLs currently use `https://everyspaces.com`, which conflicts with the media.x by revenuxe domain used by metadata.
 
 Next.js migration should replace this with dynamic:
 
@@ -195,7 +195,7 @@ These screenshots should be used as the visual preservation baseline during the 
 1. Client-side metadata currently means crawlers may not receive final per-page tags as reliably as server metadata.
 2. Listing and property detail pages fetch content with `useEffect`, so important SEO content is not in the initial HTML.
 3. Public pages and admin/listing code are bundled together in a large SPA chunk.
-4. EverySpaces domain/brand content conflicts with Looplic content.
+4. EverySpaces domain/brand content conflicts with media.x by revenuxe content.
 5. Static sitemap is incomplete and points to the wrong domain.
 6. JSON-LD on city/area pages points to EverySpaces.
 7. Admin routes are noindexed by `SEOHead`, but after migration this should be enforced with server metadata and robots.
@@ -207,6 +207,6 @@ Phase 1 is complete enough to proceed to Phase 2.
 
 Before implementing the migration, make one strategic decision:
 
-- Keep and rebrand workspace/location/listing pages under Looplic, or
-- Remove/noindex them if they belong to EverySpaces and are not part of Looplic Media.
+- Keep and rebrand workspace/location/listing pages under media.x by revenuxe, or
+- Remove/noindex them if they belong to EverySpaces and are not part of media.x by revenuxe Media.
 

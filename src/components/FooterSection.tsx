@@ -55,7 +55,7 @@ const FooterSection = () => {
             <div>
               <h4 className="font-bold text-sm mb-1">Studio</h4>
               <p className="text-sm text-muted-foreground">
-                Looplic<br />
+                media.x by revenuxe<br />
                 Bangalore, India
               </p>
             </div>
@@ -65,7 +65,7 @@ const FooterSection = () => {
             </div>
             <div>
               <h4 className="font-bold text-sm mb-1">Email</h4>
-              <p className="text-sm text-muted-foreground">hello@looplic.com</p>
+              <p className="text-sm text-muted-foreground">hello@media.revenuxe.com</p>
             </div>
           </div>
         </div>
@@ -76,11 +76,11 @@ const FooterSection = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 md:gap-8">
           <div className="col-span-2">
             <p className="text-sm text-muted-foreground max-w-xs mb-6">
-              Looplic is an AI media company producing AI video, ad films, UGC-style content, and brand &amp; product shoots for modern brands.
+              media.x by revenuxe is an AI media company producing AI video, ad films, UGC-style content, and brand &amp; product shoots for modern brands.
             </p>
             <p className="text-xs text-muted-foreground mb-2">Visit us on:</p>
             <div className="flex gap-3">
-              <a href="https://www.linkedin.com/company/looplic" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-foreground flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors">
+              <a href="https://www.linkedin.com/company/media-x-by-revenuxe" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full border border-foreground flex items-center justify-center hover:bg-accent hover:border-accent hover:text-accent-foreground transition-colors">
                 <Linkedin size={16} />
               </a>
             </div>
@@ -110,7 +110,7 @@ const FooterSection = () => {
 
       {/* Copyright */}
       <div className="bg-primary py-4 px-4 sm:px-6 text-center border-t border-border">
-        <p className="text-xs sm:text-sm text-primary-foreground">Copyright 2026 Looplic. All Rights Reserved.</p>
+        <p className="text-xs sm:text-sm text-primary-foreground">Copyright 2026 media.x by revenuxe. All Rights Reserved.</p>
       </div>
     </footer>
   );

@@ -1,6 +1,6 @@
-# Looplic
+# media.x by revenuxe
 
-Next.js App Router site for Looplic.
+Next.js App Router site for media.x by revenuxe.
 
 ## Commands
 

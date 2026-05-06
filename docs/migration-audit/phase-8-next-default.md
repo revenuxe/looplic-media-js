@@ -30,7 +30,7 @@ The old `dev:next`, `build:next`, `start:next`, and `lint:next` aliases remain a
 - Added `src/app/robots.ts` for Next-generated `/robots.txt`.
 - Added `src/app/sitemap.ts` for Next-generated `/sitemap.xml`.
 
-The generated crawl files now use `https://looplic.media`, disallow `/admin/`, `/thank-you`, and `/listings`, and do not include deleted listing URLs.
+The generated crawl files now use `https://media-x-by-revenuxe.media`, disallow `/admin/`, `/thank-you`, and `/listings`, and do not include deleted listing URLs.
 
 ## Carry Forward
 
@@ -46,4 +46,4 @@ The generated crawl files now use `https://looplic.media`, disallow `/admin/`, `
 | `npm run build` | Passes | New default build runs Next and emits `/robots.txt` and `/sitemap.xml`. |
 | `npm run build:vite` | Passes | Legacy Vite build still works via explicit alias. Existing CSS, chunk size, and Supabase import warnings remain. |
 | `npm test` | Passes | 1 Vitest file, 1 test passed. |
-| Next dev HTTP check | Passes | `/robots.txt` and `/sitemap.xml` returned HTTP 200. `/listings` returned HTTP 404. Sitemap contains Looplic URLs and no listing URLs. |
+| Next dev HTTP check | Passes | `/robots.txt` and `/sitemap.xml` returned HTTP 200. `/listings` returned HTTP 404. Sitemap contains media.x by revenuxe URLs and no listing URLs. |

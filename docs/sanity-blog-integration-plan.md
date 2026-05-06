@@ -2,7 +2,7 @@
 
 ## Goal
 
-Use Sanity as the editorial source for Looplic blogs while keeping the Next.js frontend fast, SEO-friendly and resilient. The current frontend already supports Sanity Content Lake reads through environment variables and falls back to starter posts until the CMS is connected.
+Use Sanity as the editorial source for media.x by revenuxe blogs while keeping the Next.js frontend fast, SEO-friendly and resilient. The current frontend already supports Sanity Content Lake reads through environment variables and falls back to starter posts until the CMS is connected.
 
 ## Environment
 

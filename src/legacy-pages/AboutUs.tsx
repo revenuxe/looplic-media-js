@@ -8,7 +8,7 @@ import { ArrowUpRight, Building2, Quote, Sparkles, Film, Camera, Wand2, Heart, R
 const quotes = [
   {
     text: "The best content doesn't shout — it stops the scroll, then earns the click.",
-    author: "Looplic Team",
+    author: "media.x by revenuxe Team",
   },
   {
     text: "AI doesn't replace creativity. It removes the friction between an idea and the final cut.",
@@ -56,10 +56,10 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="About Looplic – AI Media Company Building Content That Performs"
-        description="Looplic is an AI media company combining generative AI with real production craft to ship ad films, UGC, product shoots and brand content faster."
+        title="About media.x by revenuxe – AI Media Company Building Content That Performs"
+        description="media.x by revenuxe is an AI media company combining generative AI with real production craft to ship ad films, UGC, product shoots and brand content faster."
         canonical="/about"
-        keywords="about Looplic, AI media agency, AI video studio, content production India, ad film studio, UGC agency, AI creative agency"
+        keywords="about media.x by revenuxe, AI media agency, AI video studio, content production India, ad film studio, UGC agency, AI creative agency"
       />
       <Navbar />
 
@@ -69,20 +69,20 @@ const AboutUs = () => {
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-4">AI Media Company · Est. 2025</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight mb-6">
-              We're <span className="italic text-accent">Looplic</span> — AI-Powered
+              We're <span className="italic text-accent">media.x by revenuxe</span> — AI-Powered
               <br className="hidden sm:block" /> Content for Modern Brands
             </h1>
             <p className="text-primary-foreground/80 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-              Founded in 2025, Looplic blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
+              Founded in 2025, media.x by revenuxe blends generative AI with real production craft to build videos, ad films, UGC and brand shoots that look great, ship fast, and actually perform.
             </p>
           </div>
         </section>
       </AnimatedSection>
 
       <SeoAnswerSummary
-        eyebrow="About Looplic"
-        title="Looplic blends AI speed with production taste."
-        answer="Looplic is a Bangalore-based AI media company founded for brands that need cinematic content, faster iteration and a repeatable creative pipeline across video, photography, UGC, motion and paid social."
+        eyebrow="About media.x by revenuxe"
+        title="media.x by revenuxe blends AI speed with production taste."
+        answer="media.x by revenuxe is a Bangalore-based AI media company founded for brands that need cinematic content, faster iteration and a repeatable creative pipeline across video, photography, UGC, motion and paid social."
         points={[
           "AI-native creative and production workflows",
           "Real directors, editors, photographers and motion artists",
@@ -102,7 +102,7 @@ const AboutUs = () => {
                 Brands today need more content than ever — across more platforms, in more formats, with shrinking timelines and budgets. Traditional production wasn't built for that.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
-                We started Looplic in <strong>2025</strong>, right as generative AI video tipped from "interesting demo" to genuinely production-grade. We combine AI video, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
+                We started media.x by revenuxe in <strong>2025</strong>, right as generative AI video tipped from "interesting demo" to genuinely production-grade. We combine AI video, AI scripting and shot planning with a real crew of directors, DOPs and editors — so you get the speed of AI and the soul of great filmmaking.
               </p>
               <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
                 Today we partner with D2C brands, agencies and startups to ship monthly content systems that compound into growth — across ad films, UGC, product shoots and AI video.
@@ -151,7 +151,7 @@ const AboutUs = () => {
                 Platform
               </p>
               <h2 className="text-2xl sm:text-3xl font-serif leading-tight">
-                Looplic, a Platform by <span className="italic text-accent">Revenuxe</span>
+                media.x by revenuxe, a Platform by <span className="italic text-accent">Revenuxe</span>
               </h2>
             </div>
             <div className="border border-border bg-card p-6 sm:p-8">
@@ -159,7 +159,7 @@ const AboutUs = () => {
                 <Building2 size={28} className="text-accent shrink-0 mt-1" />
                 <div>
                   <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
-                    Looplic is built as a focused media and content platform by Revenuxe, bringing together AI-native production, brand storytelling and performance-led creative systems for modern businesses.
+                    media.x by revenuxe is built as a focused media and content platform by Revenuxe, bringing together AI-native production, brand storytelling and performance-led creative systems for modern businesses.
                   </p>
                   <a
                     href="https://revenuxe.com"

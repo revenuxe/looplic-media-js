@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import AppLink from "@/components/AppLink";
 import { assetSrc } from "@/lib/assets";
-import logo from "@/assets/looplic-logo.webp";
+import logo from "@/assets/media-x-by-revenuxe-logo.webp";
 
 const navLinks = [
   { label: "Home", href: "/", isRoute: true },
@@ -21,7 +21,7 @@ const Navbar = () => {
     <header className="w-full bg-primary py-4 px-6 lg:px-12 relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <AppLink to="/" className="flex items-center gap-3">
-          <img src={assetSrc(logo)} alt="Looplic logo" className="h-10 w-auto" />
+          <img src={assetSrc(logo)} alt="media.x by revenuxe logo" className="h-10 w-auto" />
         </AppLink>
 
         <nav className="hidden lg:flex items-center bg-primary-foreground/10 backdrop-blur-sm rounded-full px-2 py-1 border border-primary-foreground/20">

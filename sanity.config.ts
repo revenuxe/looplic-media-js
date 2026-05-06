@@ -7,8 +7,8 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "zujxe2ee";
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production";
 
 export default defineConfig({
-  name: "looplic",
-  title: "Looplic Content Studio",
+  name: "media-x-by-revenuxe",
+  title: "media.x by revenuxe Content Studio",
   projectId,
   dataset,
   basePath: "/studio",

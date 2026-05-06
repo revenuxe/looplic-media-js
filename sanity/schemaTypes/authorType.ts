@@ -15,7 +15,7 @@ export const authorType = defineType({
       name: "role",
       title: "Role",
       type: "string",
-      initialValue: "Looplic Team",
+      initialValue: "media.x by revenuxe Team",
     }),
     defineField({
       name: "bio",

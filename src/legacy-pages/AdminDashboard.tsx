@@ -161,7 +161,7 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <SEOHead title="Leads Dashboard | Looplic Admin" description="Admin leads dashboard" keywords="admin" noIndex />
+      <SEOHead title="Leads Dashboard | media.x by revenuxe Admin" description="Admin leads dashboard" keywords="admin" noIndex />
       <div className="min-h-screen bg-background">
         <header className="sticky top-0 z-30 bg-primary text-primary-foreground shadow-lg">
           <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
@@ -169,7 +169,7 @@ const AdminDashboard = () => {
               <Users size={20} className="shrink-0" />
               <div className="min-w-0">
                 <h1 className="truncate text-lg font-serif">Leads Dashboard</h1>
-                <p className="text-xs text-primary-foreground/70">Looplic admin</p>
+                <p className="text-xs text-primary-foreground/70">media.x by revenuxe admin</p>
               </div>
             </div>
             <div className="flex items-center gap-1.5">

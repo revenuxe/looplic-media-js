@@ -9,10 +9,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Contact Looplic | Hire an AI Video, Ad Film & UGC Studio in 24 Hours"
-        description="Brief Looplic on your next AI video, ad film, UGC, product shoot, motion graphics or brand campaign. Bangalore-based AI media studio, since 2025. We respond within 24 hours."
+        title="Contact media.x by revenuxe | Hire an AI Video, Ad Film & UGC Studio in 24 Hours"
+        description="Brief media.x by revenuxe on your next AI video, ad film, UGC, product shoot, motion graphics or brand campaign. Bangalore-based AI media studio, since 2025. We respond within 24 hours."
         canonical="/contact"
-        keywords="contact Looplic, hire AI video agency, ad film production company Bangalore, UGC agency India, product shoot studio, brand shoot, AI media company contact, get a quote video production"
+        keywords="contact media.x by revenuxe, hire AI video agency, ad film production company Bangalore, UGC agency India, product shoot studio, brand shoot, AI media company contact, get a quote video production"
       />
       <Navbar />
       <AnimatedSection>
@@ -20,8 +20,8 @@ const Contact = () => {
       </AnimatedSection>
       <SeoAnswerSummary
         eyebrow="Contact Summary"
-        title="Brief Looplic for AI video, ad film, UGC and production work."
-        answer="Use the form to share your project type, brand, timeline and goals. Looplic reviews each brief and responds with a practical next step for production, creative direction or a custom quote."
+        title="Brief media.x by revenuxe for AI video, ad film, UGC and production work."
+        answer="Use the form to share your project type, brand, timeline and goals. media.x by revenuxe reviews each brief and responds with a practical next step for production, creative direction or a custom quote."
         points={[
           "Bangalore-based, serving Indian and global brands",
           "AI video, UGC, ad films, product and brand shoots",

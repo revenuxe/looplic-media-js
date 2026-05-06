@@ -14,12 +14,12 @@ import {
 export const revalidate = 30;
 
 export const metadata: Metadata = createSeoMetadata({
-  title: "Looplic Blog - AI Video, Content Production & Creative SEO",
+  title: "Blog - AI Video, Content Production & Creative SEO",
   description:
-    "Read Looplic insights on AI video production, ad films, UGC, product shoots, performance creative and SEO-led content marketing.",
+    "Read media.x by revenuxe insights on AI video production, ad films, UGC, product shoots, performance creative and SEO-led content marketing.",
   path: "/blog",
   keywords: [
-    "Looplic blog",
+    "media.x by revenuxe blog",
     "AI video production blog",
     "content production SEO",
     "UGC marketing tips",
@@ -40,9 +40,9 @@ export default async function BlogPage() {
         data={[
           webPageSchema({
             type: "CollectionPage",
-            name: "Looplic Blog",
+            name: "media.x by revenuxe Blog",
             description:
-              "AI video, production, UGC, performance creative and SEO insights from Looplic.",
+              "AI video, production, UGC, performance creative and SEO insights from media.x by revenuxe.",
             path: "/blog",
           }),
           breadcrumbSchema([
@@ -56,7 +56,7 @@ export default async function BlogPage() {
       <section className="bg-primary px-4 py-14 text-primary-foreground sm:px-6 md:py-24 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-accent">
-            Looplic Insights
+            media.x by revenuxe Insights
           </p>
           <h1 className="max-w-4xl text-4xl font-serif leading-tight sm:text-5xl md:text-7xl">
             Ideas for content that <span className="italic text-accent">ships</span>, ranks and sells.

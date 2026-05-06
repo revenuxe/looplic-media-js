@@ -15,8 +15,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title="Looplic – AI Media Company | AI Video, Ad Films, UGC & Product Shoots"
-        description="Looplic is an AI media company building AI videos, ad films, UGC-style content, product & brand shoots, scriptwriting and storyboarding for modern brands."
+        title="media.x by revenuxe – AI Media Company | AI Video, Ad Films, UGC & Product Shoots"
+        description="media.x by revenuxe is an AI media company building AI videos, ad films, UGC-style content, product & brand shoots, scriptwriting and storyboarding for modern brands."
         canonical="/"
         keywords="AI media company, AI video generation, ad film production, UGC content, product photography, brand shoots, AI scriptwriting, storyboarding, content production agency"
       />
@@ -25,8 +25,8 @@ const Index = () => {
         <HeroSection />
       </AnimatedSection>
       <SeoAnswerSummary
-        title="Looplic is an AI media studio for brands that need more high-performing content."
-        answer="Looplic helps D2C, SaaS, creator-led and enterprise brands produce AI videos, ad films, UGC ads, product photography, brand shoots, motion graphics and performance creative from one Bangalore-based production partner."
+        title="media.x by revenuxe is an AI media studio for brands that need more high-performing content."
+        answer="media.x by revenuxe helps D2C, SaaS, creator-led and enterprise brands produce AI videos, ad films, UGC ads, product photography, brand shoots, motion graphics and performance creative from one Bangalore-based production partner."
         points={[
           "Best for AI video, ad films, UGC and product content",
           "Combines generative AI speed with real production craft",

@@ -52,8 +52,8 @@ const AdminLogin = () => {
   return (
     <>
       <SEOHead
-        title="Admin Login | Looplic"
-        description="Admin login portal for Looplic."
+        title="Admin Login | media.x by revenuxe"
+        description="Admin login portal for media.x by revenuxe."
         keywords="admin login"
         noIndex
       />
