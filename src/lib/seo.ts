@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import type { ServiceDetail } from "@/data/serviceDetails";
 
 export const siteUrl = "https://media.revenuxe.com";
-export const siteName = "media.x by revenuxe";
+export const siteName = "Media.X by Revenuxe";
 export const defaultOgImage = "/media-x-by-revenuxe-og.webp";
 
 export const absoluteUrl = (path = "/") => new URL(path, siteUrl).toString();
@@ -41,7 +41,7 @@ export const createSeoMetadata = ({
         url: image,
         width: 1200,
         height: 630,
-        alt: "media.x by revenuxe AI media production studio",
+        alt: "Media.X by Revenuxe AI media production studio",
       },
     ],
   },
@@ -73,8 +73,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": `${siteUrl}/#organization`,
-  name: "media.x by revenuxe",
-  alternateName: "media.x by revenuxe",
+  name: "Media.X by Revenuxe",
+  alternateName: "Media.X by Revenuxe",
   description:
     "AI media company and content production studio specializing in AI video, ad films, UGC, product photography, brand shoots, motion graphics and performance creative.",
   url: siteUrl,

@@ -29,7 +29,7 @@ export async function generateMetadata({
 
   if (!detail) {
     return {
-      title: "Service Not Found | media.x by revenuxe",
+      title: "Service Not Found | Media.X by Revenuxe",
     };
   }
 

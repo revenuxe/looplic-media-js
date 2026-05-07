@@ -6,10 +6,10 @@ import { breadcrumbSchema, createSeoMetadata, webPageSchema } from "@/lib/seo";
 export const metadata: Metadata = createSeoMetadata({
   title: "Terms & Conditions - Service Agreement",
   description:
-    "Terms & conditions for engaging media.x by revenuxe for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions.",
+    "Terms & conditions for engaging Media.X by Revenuxe for AI video production, ad films, UGC, product shoots and content services. Scope, payment, IP, deliverables and revisions.",
   path: "/terms-and-conditions",
   keywords: [
-    "media.x by revenuxe terms and conditions",
+    "Media.X by Revenuxe terms and conditions",
     "AI video production agreement",
     "ad film service agreement",
     "content production terms",
@@ -26,7 +26,7 @@ export default function TermsConditionsPage() {
           webPageSchema({
             name: "Terms and Conditions",
             description:
-              "Service agreement terms for media.x by revenuxe's AI video, ad film, UGC and content production services.",
+              "Service agreement terms for Media.X by Revenuxe's AI video, ad film, UGC and content production services.",
             path: "/terms-and-conditions",
           }),
           breadcrumbSchema([

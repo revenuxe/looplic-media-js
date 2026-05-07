@@ -6,10 +6,10 @@ import { breadcrumbSchema, createSeoMetadata, webPageSchema } from "@/lib/seo";
 export const metadata: Metadata = createSeoMetadata({
   title: "About - AI Media Studio for Content That Performs",
   description:
-    "Meet media.x by revenuxe, a Bangalore AI media company combining generative AI, filmmaking and performance creative to ship brand videos, UGC and product content faster.",
+    "Meet Media.X by Revenuxe, a Bangalore AI media company combining generative AI, filmmaking and performance creative to ship brand videos, UGC and product content faster.",
   path: "/about",
   keywords: [
-    "about media.x by revenuxe",
+    "about Media.X by Revenuxe",
     "AI media agency",
     "AI video studio",
     "content production India",
@@ -26,9 +26,9 @@ export default function AboutPage() {
         data={[
           webPageSchema({
             type: "AboutPage",
-            name: "About media.x by revenuxe",
+            name: "About Media.X by Revenuxe",
             description:
-              "media.x by revenuxe blends generative AI with production craft for AI video, ad films, UGC, product shoots and brand content.",
+              "Media.X by Revenuxe blends generative AI with production craft for AI video, ad films, UGC, product shoots and brand content.",
             path: "/about",
           }),
           breadcrumbSchema([

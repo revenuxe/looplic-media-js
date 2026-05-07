@@ -15,7 +15,7 @@ const StatsSection = () => {
               India's AI video, ad film &amp; UGC content production agency
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              From AI-generated commercials and TVCs to product photography, UGC ads and brand films — media.x by revenuxe helps D2C brands, SaaS and agencies ship high-performing content 10x faster, at a fraction of traditional production cost.
+              From AI-generated commercials and TVCs to product photography, UGC ads and brand films — Media.X by Revenuxe helps D2C brands, SaaS and agencies ship high-performing content 10x faster, at a fraction of traditional production cost.
             </p>
           </div>
           <div>

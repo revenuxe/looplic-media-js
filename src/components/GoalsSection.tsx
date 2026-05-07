@@ -23,7 +23,7 @@ const GoalsSection = () => {
     <section id="goals" className="py-12 md:py-20 px-4 sm:px-6 lg:px-12 bg-dark-green">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-primary-foreground mb-8 md:mb-12">
-          <span className="italic">Why</span> Brands &amp; Agencies Choose media.x by revenuxe
+          <span className="italic">Why</span> Brands &amp; Agencies Choose Media.X by Revenuxe
           <br />
           for AI-Powered Content
         </h2>

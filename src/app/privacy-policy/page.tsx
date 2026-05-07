@@ -6,10 +6,10 @@ import { breadcrumbSchema, createSeoMetadata, webPageSchema } from "@/lib/seo";
 export const metadata: Metadata = createSeoMetadata({
   title: "Privacy Policy - How We Protect Your Data",
   description:
-    "Read media.x by revenuxe's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information.",
+    "Read Media.X by Revenuxe's privacy policy. Learn how our AI video and content production studio collects, stores, and protects your personal and brand information.",
   path: "/privacy-policy",
   keywords: [
-    "media.x by revenuxe privacy policy",
+    "Media.X by Revenuxe privacy policy",
     "AI media data protection",
     "video production privacy",
     "brand data protection",
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
           webPageSchema({
             name: "Privacy Policy",
             description:
-              "Privacy policy for media.x by revenuxe's AI video and content production services.",
+              "Privacy policy for Media.X by Revenuxe's AI video and content production services.",
             path: "/privacy-policy",
           }),
           breadcrumbSchema([

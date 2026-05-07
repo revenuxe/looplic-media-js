@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: BlogDetailProps): Promise<Met
   if (!post) {
     return createSeoMetadata({
       title: "Blog Post Not Found",
-      description: "This media.x by revenuxe blog post could not be found.",
+      description: "This Media.X by Revenuxe blog post could not be found.",
       path: `/blog/${slug}`,
       noIndex: true,
     });
@@ -176,7 +176,7 @@ export default async function BlogDetailPage({ params }: BlogDetailProps) {
               {post.excerpt}
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-primary-foreground/70">
-              <span>{post.author?.name || "media.x by revenuxe Team"}</span>
+              <span>{post.author?.name || "Media.X by Revenuxe Team"}</span>
               {post.author?.role && (
                 <>
                   <span className="h-1 w-1 rounded-full bg-accent" />

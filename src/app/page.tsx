@@ -10,9 +10,9 @@ import {
 import { serviceList } from "@/data/serviceDetails";
 
 export const metadata: Metadata = createSeoMetadata({
-  title: "media.x by revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
+  title: "Media.X by Revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
   description:
-    "media.x by revenuxe is a Bangalore-based AI media studio producing AI videos, ad films, UGC ads, product shoots, motion graphics and brand content for modern brands.",
+    "Media.X by Revenuxe is a Bangalore-based AI media studio producing AI videos, ad films, UGC ads, product shoots, motion graphics and brand content for modern brands.",
   path: "/",
   keywords: [
     "AI video production company",
@@ -31,7 +31,7 @@ export default function HomePage() {
       <JsonLd
         data={[
           webPageSchema({
-            name: "media.x by revenuxe AI Studio",
+            name: "Media.X by Revenuxe AI Studio",
             description:
               "AI video production, ad films, UGC, product photography, brand shoots and performance creative for modern brands.",
             path: "/",

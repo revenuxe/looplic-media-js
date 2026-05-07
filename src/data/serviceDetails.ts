@@ -18,7 +18,7 @@ export const serviceDetails: Record<string, ServiceDetail> = {
     shortDesc:
       "AI-generated cinematic videos, ad reels and social cuts — concept to final master, in days, not months.",
     longDesc:
-      "media.x by revenuxe blends generative AI video models (Sora, Veo, Runway, Kling) with real cinematic craft to produce ads, brand films, explainers, talking-head avatars and viral social cuts. From script to a polished, broadcast-ready master, we deliver cinematic AI video production at a fraction of the cost and time of a traditional shoot — without compromising on storytelling, visual quality or brand consistency.",
+      "Media.X by Revenuxe blends generative AI video models (Sora, Veo, Runway, Kling) with real cinematic craft to produce ads, brand films, explainers, talking-head avatars and viral social cuts. From script to a polished, broadcast-ready master, we deliver cinematic AI video production at a fraction of the cost and time of a traditional shoot — without compromising on storytelling, visual quality or brand consistency.",
     variant: "default",
     keywords:
       "AI video production, AI video generation services, generative AI ads, Sora video agency, Runway video production, AI commercial maker, AI video agency India",

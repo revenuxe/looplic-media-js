@@ -13,15 +13,15 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "media.x by revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
-    template: "%s | media.x by revenuxe",
+    default: "Media.X by Revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
+    template: "%s | Media.X by Revenuxe",
   },
   description:
-    "media.x by revenuxe is an AI media and content production studio for AI videos, ad films, UGC, product photography, brand shoots, motion graphics and performance creative.",
-  authors: [{ name: "media.x by revenuxe" }],
-  creator: "media.x by revenuxe",
-  publisher: "media.x by revenuxe",
-  applicationName: "media.x by revenuxe",
+    "Media.X by Revenuxe is an AI media and content production studio for AI videos, ad films, UGC, product photography, brand shoots, motion graphics and performance creative.",
+  authors: [{ name: "Media.X by Revenuxe" }],
+  creator: "Media.X by Revenuxe",
+  publisher: "Media.X by Revenuxe",
+  applicationName: "Media.X by Revenuxe",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    siteName: "media.x by revenuxe",
+    siteName: "Media.X by Revenuxe",
     url: "/",
-    title: "media.x by revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
+    title: "Media.X by Revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
     description:
       "AI video, ad films, UGC, product shoots and brand films built faster with AI and finished by real filmmakers.",
     images: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
         url: defaultOgImage,
         width: 1200,
         height: 630,
-        alt: "media.x by revenuxe AI media production studio",
+        alt: "Media.X by Revenuxe AI media production studio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "media.x by revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
+    title: "Media.X by Revenuxe - AI Video Production, Ad Films, UGC & Brand Shoots",
     description:
       "AI video, ad films, UGC, product shoots and brand films built faster with AI and finished by real filmmakers.",
     images: [defaultOgImage],
