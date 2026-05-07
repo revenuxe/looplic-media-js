@@ -18,8 +18,8 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="w-full bg-primary py-4 pl-0 pr-6 lg:pl-0 lg:pr-12 relative z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header className="w-full bg-primary py-4 px-2 lg:px-4 relative z-50">
+      <div className="flex items-center justify-between w-full">
         <AppLink to="/" className="flex items-center gap-2">
           <img src={assetSrc(logo)} alt="media.x logo" className="h-10 w-auto" />
         </AppLink>

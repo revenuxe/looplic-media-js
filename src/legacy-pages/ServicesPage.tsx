@@ -75,14 +75,14 @@ const ServicesPage = () => {
               <br className="hidden sm:block" /> your brand needs.
             </h1>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl">
-              From cinematic AI video and ad films to UGC, product shoots, motion graphics, podcasts and performance creative — Media.X by Revenuxe is the AI media partner that ships everything, in one studio.
+              From cinematic AI video and ad films to UGC, product shoots, motion graphics, podcasts and performance creative — media.x by Revenuxe is the AI media partner that ships everything, in one studio.
             </p>
           </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 -mt-16 sm:-mt-20 relative z-20">
           <div className="rounded-lg sm:rounded-2xl overflow-hidden shadow-2xl">
-            <img src={assetSrc(heroImg)} alt="Media.X by Revenuxe AI media studio behind the scenes" width={1920} height={1080} className="w-full h-[200px] sm:h-[300px] md:h-[500px] object-cover" />
+            <img src={assetSrc(heroImg)} alt="media.x by Revenuxe AI media studio behind the scenes" width={1920} height={1080} className="w-full h-[200px] sm:h-[300px] md:h-[500px] object-cover" />
           </div>
           <div className="mt-6 sm:mt-8">
             <AppLink
@@ -100,8 +100,8 @@ const ServicesPage = () => {
 
       <SeoAnswerSummary
         eyebrow="Service Summary"
-        title="Media.X by Revenuxe covers the full content production stack."
-        answer="Brands hire Media.X by Revenuxe when they need one team for strategy, scripting, AI video generation, live shoots, creator-style UGC, editing, animation, performance variants and final delivery across every social and ad format."
+        title="media.x by Revenuxe covers the full content production stack."
+        answer="Brands hire media.x by Revenuxe when they need one team for strategy, scripting, AI video generation, live shoots, creator-style UGC, editing, animation, performance variants and final delivery across every social and ad format."
         points={[
           "AI video, avatars and synthetic media",
           "Ad films, product shoots and brand campaigns",

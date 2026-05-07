@@ -126,8 +126,8 @@ const ServiceDetailPage = ({ slug }: ServiceDetailPageProps) => {
 
       <SeoAnswerSummary
         eyebrow="Direct Answer"
-        title={`${detail.title} by Media.X by Revenuxe`}
-        answer={`Media.X by Revenuxe provides ${detail.title.toLowerCase()} for brands that need polished, platform-ready content with strategy, production, post-production and performance variants handled by one team.`}
+        title={`${detail.title} by media.x by Revenuxe`}
+        answer={`media.x by Revenuxe provides ${detail.title.toLowerCase()} for brands that need polished, platform-ready content with strategy, production, post-production and performance variants handled by one team.`}
         points={[
           detail.useCases[0],
           detail.deliverables[0],
@@ -141,7 +141,7 @@ const ServiceDetailPage = ({ slug }: ServiceDetailPageProps) => {
           <div className="max-w-4xl mx-auto">
             <span className="text-accent font-semibold text-xs uppercase tracking-wider">Overview</span>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mt-2 mb-6">
-              Why brands choose Media.X by Revenuxe for {detail.title}
+              Why brands choose media.x by Revenuxe for {detail.title}
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">{detail.longDesc}</p>
           </div>

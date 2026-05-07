@@ -27,7 +27,7 @@ const HeroSection = () => {
             <span className="sm:hidden"> </span>Content That Converts
           </h1>
           <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl">
-            Media.X by Revenuxe is an AI media &amp; ad film production company building cinematic AI videos, UGC ads, product shoots and brand films for D2C, SaaS and modern brands — 10x faster, at a fraction of the cost.
+            media.x by Revenuxe is an AI media &amp; ad film production company building cinematic AI videos, UGC ads, product shoots and brand films for D2C, SaaS and modern brands — 10x faster, at a fraction of the cost.
           </p>
         </div>
       </div>

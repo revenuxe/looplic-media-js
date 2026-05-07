@@ -30,7 +30,7 @@ const PrivacyPolicy = () => {
           <div className="max-w-3xl mx-auto prose-sm sm:prose text-foreground">
             <h2 className="text-xl sm:text-2xl font-serif mb-4">1. Introduction</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Media.X by Revenuxe ("Media.X by Revenuxe," "we," "our," or "us"), founded in 2025, is an AI-powered media and content production studio. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal and brand information when you visit our website, submit an inquiry, or engage us for AI video, ad film, UGC, product shoot, brand shoot, motion graphics or any related production service. By using our services, you agree to this Policy.
+              media.x by Revenuxe ("media.x by Revenuxe," "we," "our," or "us"), founded in 2025, is an AI-powered media and content production studio. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal and brand information when you visit our website, submit an inquiry, or engage us for AI video, ad film, UGC, product shoot, brand shoot, motion graphics or any related production service. By using our services, you agree to this Policy.
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">2. Information We Collect</h2>
@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">6. Brand Assets, Footage & Confidentiality</h2>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              All brand assets, raw footage, scripts, voice samples and unreleased creative shared with Media.X by Revenuxe are treated as confidential. We do not publish or repurpose your content without written consent. Final deliverables ownership is governed by your engagement agreement (typically transferred to you on full payment, with Media.X by Revenuxe retaining rights to display the work in our portfolio unless restricted by NDA).
+              All brand assets, raw footage, scripts, voice samples and unreleased creative shared with media.x by Revenuxe are treated as confidential. We do not publish or repurpose your content without written consent. Final deliverables ownership is governed by your engagement agreement (typically transferred to you on full payment, with media.x by Revenuxe retaining rights to display the work in our portfolio unless restricted by NDA).
             </p>
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">7. Cookies & Analytics</h2>
@@ -128,7 +128,7 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-xl sm:text-2xl font-serif mb-4">14. Contact</h2>
             <div className="bg-secondary rounded-xl p-5 text-sm text-muted-foreground space-y-1">
-              <p><strong className="text-foreground">Media.X by Revenuxe</strong></p>
+              <p><strong className="text-foreground">media.x by Revenuxe</strong></p>
               <p>Bangalore, India</p>
               <p>Email: hello@media.revenuxe.com</p>
               <p>Phone: +91 98862 85028</p>

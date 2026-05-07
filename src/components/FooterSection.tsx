@@ -55,7 +55,7 @@ const FooterSection = () => {
             <div>
               <h4 className="font-bold text-sm mb-1">Studio</h4>
               <p className="text-sm text-muted-foreground">
-                Media.X by Revenuxe<br />
+                media.x by Revenuxe<br />
                 Bangalore, India
               </p>
             </div>
@@ -76,7 +76,7 @@ const FooterSection = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 md:gap-8">
           <div className="col-span-2">
             <p className="text-sm text-muted-foreground max-w-xs mb-6">
-              Media.X by Revenuxe is an AI media company producing AI video, ad films, UGC-style content, and brand &amp; product shoots for modern brands.
+              media.x by Revenuxe is an AI media company producing AI video, ad films, UGC-style content, and brand &amp; product shoots for modern brands.
             </p>
             <p className="text-xs text-muted-foreground mb-2">Visit us on:</p>
             <div className="flex gap-3">
@@ -110,7 +110,7 @@ const FooterSection = () => {
 
       {/* Copyright */}
       <div className="bg-primary py-4 px-4 sm:px-6 text-center border-t border-border">
-        <p className="text-xs sm:text-sm text-primary-foreground">Copyright 2026 Media.X by Revenuxe. All Rights Reserved.</p>
+        <p className="text-xs sm:text-sm text-primary-foreground">Copyright 2026 media.x by Revenuxe. All Rights Reserved.</p>
       </div>
     </footer>
   );

@@ -169,7 +169,7 @@ const AdminDashboard = () => {
               <Users size={20} className="shrink-0" />
               <div className="min-w-0">
                 <h1 className="truncate text-lg font-serif">Leads Dashboard</h1>
-                <p className="text-xs text-primary-foreground/70">Media.X by Revenuxe admin</p>
+                <p className="text-xs text-primary-foreground/70">media.x by Revenuxe admin</p>
               </div>
             </div>
             <div className="flex items-center gap-1.5">

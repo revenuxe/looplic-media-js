@@ -45,9 +45,9 @@ const fallbackPosts: BlogPost[] = [
     tags: ["AI video", "production", "performance creative"],
     publishedAt: "2026-04-18",
     readingTime: 6,
-    author: { name: "Media.X by Revenuxe Team", role: "AI Media Studio" },
+    author: { name: "media.x by Revenuxe Team", role: "AI Media Studio" },
     coverImage: "/media-x-by-revenuxe-og.webp",
-    coverImageAlt: "Media.X by Revenuxe AI media production studio",
+    coverImageAlt: "media.x by Revenuxe AI media production studio",
     seoTitle: "AI Video Production for Faster Brand Campaigns",
     seoDescription:
       "Learn how AI video production speeds up scripting, storyboarding, asset creation and campaign iteration for modern brands.",
@@ -108,9 +108,9 @@ const fallbackPosts: BlogPost[] = [
     tags: ["UGC", "ad films", "product shoots"],
     publishedAt: "2026-04-08",
     readingTime: 5,
-    author: { name: "Media.X by Revenuxe Team", role: "Creative Strategy" },
+    author: { name: "media.x by Revenuxe Team", role: "Creative Strategy" },
     coverImage: "/media-x-by-revenuxe-og.webp",
-    coverImageAlt: "Media.X by Revenuxe content production strategy",
+    coverImageAlt: "media.x by Revenuxe content production strategy",
     seoTitle: "UGC vs Ad Films vs Product Shoots: What to Make First",
     seoDescription:
       "Compare UGC, ad films and product shoots so your brand can prioritize content that matches its stage and marketing goal.",
@@ -140,7 +140,7 @@ const fallbackPosts: BlogPost[] = [
       {
         _type: "quote",
         text: "The best content mix usually has one polished brand asset and many sharp performance variants.",
-        byline: "Media.X by Revenuxe production principle",
+        byline: "media.x by Revenuxe production principle",
       },
       {
         _type: "block",
@@ -157,12 +157,12 @@ const fallbackPosts: BlogPost[] = [
     title: "A Practical SEO Checklist for Creative Studio Blog Posts",
     slug: "seo-checklist-for-creative-studio-blogs",
     excerpt:
-      "The blog publishing checklist Media.X by Revenuxe uses for search-friendly titles, metadata, internal links, schema and helpful content structure.",
+      "The blog publishing checklist media.x by Revenuxe uses for search-friendly titles, metadata, internal links, schema and helpful content structure.",
     category: "SEO",
     tags: ["SEO", "content marketing", "creative studio"],
     publishedAt: "2026-03-26",
     readingTime: 7,
-    author: { name: "Media.X by Revenuxe Team", role: "SEO Content" },
+    author: { name: "media.x by Revenuxe Team", role: "SEO Content" },
     coverImage: "/media-x-by-revenuxe-og.webp",
     coverImageAlt: "SEO checklist for creative studio blogs",
     seoTitle: "SEO Checklist for Creative Studio Blog Posts",

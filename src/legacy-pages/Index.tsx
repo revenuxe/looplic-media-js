@@ -25,8 +25,8 @@ const Index = () => {
         <HeroSection />
       </AnimatedSection>
       <SeoAnswerSummary
-        title="Media.X by Revenuxe is an AI media studio for brands that need more high-performing content."
-        answer="Media.X by Revenuxe helps D2C, SaaS, creator-led and enterprise brands produce AI videos, ad films, UGC ads, product photography, brand shoots, motion graphics and performance creative from one Bangalore-based production partner."
+        title="media.x by Revenuxe is an AI media studio for brands that need more high-performing content."
+        answer="media.x by Revenuxe helps D2C, SaaS, creator-led and enterprise brands produce AI videos, ad films, UGC ads, product photography, brand shoots, motion graphics and performance creative from one Bangalore-based production partner."
         points={[
           "Best for AI video, ad films, UGC and product content",
           "Combines generative AI speed with real production craft",

@@ -20,8 +20,8 @@ const Contact = () => {
       </AnimatedSection>
       <SeoAnswerSummary
         eyebrow="Contact Summary"
-        title="Brief Media.X by Revenuxe for AI video, ad film, UGC and production work."
-        answer="Use the form to share your project type, brand, timeline and goals. Media.X by Revenuxe reviews each brief and responds with a practical next step for production, creative direction or a custom quote."
+        title="Brief media.x by Revenuxe for AI video, ad film, UGC and production work."
+        answer="Use the form to share your project type, brand, timeline and goals. media.x by Revenuxe reviews each brief and responds with a practical next step for production, creative direction or a custom quote."
         points={[
           "Bangalore-based, serving Indian and global brands",
           "AI video, UGC, ad films, product and brand shoots",

@@ -9,7 +9,7 @@ const TestimonialSection = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center mb-8 md:mb-12">
           <span className="italic font-bold">Brands</span> That Ship Faster
           <br />
-          and Look Sharper with Media.X by Revenuxe
+          and Look Sharper with media.x by Revenuxe
         </h2>
 
         <div className="relative rounded-none overflow-hidden min-h-[300px] sm:min-h-[400px]">
@@ -29,7 +29,7 @@ const TestimonialSection = () => {
                 </div>
               </div>
               <p className="text-foreground text-sm sm:text-base leading-relaxed mb-6">
-                "Media.X by Revenuxe delivered a full month of ad creatives and UGC-style videos in under two weeks. The AI workflow is wild — and the output actually performs on Meta and YouTube."
+                "media.x by Revenuxe delivered a full month of ad creatives and UGC-style videos in under two weeks. The AI workflow is wild — and the output actually performs on Meta and YouTube."
               </p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-bold text-sm">
